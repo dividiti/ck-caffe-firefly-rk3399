@@ -1,6 +1,23 @@
-This Jupyter Notebook studies the performance (execution time, memory consumption):
+# [cknowledge.org/ai](http://cknowledge.org/ai): Crowdsourcing benchmarking and optimisation of AI
 
-- on the [Firefly-RK3399](http://en.t-firefly.com/en/firenow/Firefly_RK3399/) development board:
+A suite of open-source tools for [collecting knowledge on optimising AI](http://bit.ly/hipeac49-ckdl):
+* [Android app](https://play.google.com/store/apps/details?id=openscience.crowdsource.video.experiments&hl=en_GB)
+* [Desktop app](https://github.com/dividiti/ck-crowdsource-dnn-optimization)
+* [CK-Caffe](https://github.com/dividiti/ck-caffe)
+* [CK-Caffe2](https://github.com/ctuning/ck-caffe2)
+* [CK-TensorRT](https://github.com/dividiti/ck-tensorrt)
+* [CK-TensorFlow](https://github.com/ctuning/ck-tensorflow)
+* etc.
+
+# [PUBLIC] Benchmarking Caffe on Firefly-RK3399
+
+The Jupyter notebook (
+[view on github.com](https://github.com/dividiti/ck-caffe-firefly-rk3399/blob/master/script/batch_size-libs-models/analysis.20170530.ipynb);
+[view on nbviewer.jupyter.org](https://nbviewer.jupyter.org/github/dividiti/ck-caffe-firefly-rk3399/blob/master/script/batch_size-libs-models/analysis.20170530.ipynb)
+) in this Collective Knowledge repository analyses the execution time of
+inference (forward propagation):
+
+- on the [Firefly-RK3399](http://en.t-firefly.com/en/firenow/Firefly_RK3399) development board:
   - Chip:
     - [Rockchip RK3399](http://rockchip.wikidot.com/rk3399)
   - CPU ("big"):
