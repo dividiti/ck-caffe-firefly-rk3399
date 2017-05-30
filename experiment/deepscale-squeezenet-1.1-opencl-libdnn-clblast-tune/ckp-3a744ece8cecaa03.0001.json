@@ -1,0 +1,4096 @@
+{
+  "characteristics_list": [
+    {
+      "compile": {
+        "binary_size": 170836, 
+        "compilation_success": "yes", 
+        "compilation_success_bool": true, 
+        "compilation_time": 14.984885215759277, 
+        "compilation_time_with_module": 17.04070210456848, 
+        "joined_compiler_flags": "-O3", 
+        "md5_sum": "843737946f90a193daadd014fac1bcab", 
+        "obj_size": 296824, 
+        "obj_sizes": {
+          "caffe.o": 296824
+        }, 
+        "program_git_hash": "91f9b1b4a67516acc4abc180bf31b639ac41a5c4"
+      }, 
+      "run": {
+        "REAL_ENV_CK_CAFFE_BATCH_SIZE": "14", 
+        "REAL_ENV_CK_CAFFE_ITERATIONS": "1", 
+        "REAL_ENV_CK_CAFFE_MODEL": "/home/test/CK_REPOS/ck-caffe/program/caffe-time-opencl/tmp/tmp-RR0YJ9.prototxt", 
+        "execution_time": 23.3193, 
+        "execution_time_with_module": 35.47821593284607, 
+        "memory_bytes": 452407144, 
+        "memory_kbytes": 452407.14400000003, 
+        "memory_mbytes": 452.40714399999996, 
+        "per_layer_info": [
+          {
+            "direction": "forward", 
+            "index": 0, 
+            "label": "00: input", 
+            "time_ms": 0.442112, 
+            "time_s": 0.00044211200000000004, 
+            "timestamp": "0522 10:44:47.441107"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 0, 
+            "label": "00: input", 
+            "time_ms": 0.320076, 
+            "time_s": 0.00032007600000000003, 
+            "timestamp": "0522 10:44:47.441140"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 1, 
+            "label": "01: conv1", 
+            "time_ms": 523.3, 
+            "time_s": 0.5233, 
+            "timestamp": "0522 10:44:47.441166"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 1, 
+            "label": "01: conv1", 
+            "time_ms": 1335.63, 
+            "time_s": 1.33563, 
+            "timestamp": "0522 10:44:47.441193"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 2, 
+            "label": "02: relu_conv1", 
+            "time_ms": 25.3165, 
+            "time_s": 0.025316500000000002, 
+            "timestamp": "0522 10:44:47.441220"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 2, 
+            "label": "02: relu_conv1", 
+            "time_ms": 0.30992, 
+            "time_s": 0.00030992, 
+            "timestamp": "0522 10:44:47.441246"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 3, 
+            "label": "03: pool1", 
+            "time_ms": 18.449, 
+            "time_s": 0.018449000000000004, 
+            "timestamp": "0522 10:44:47.441321"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 3, 
+            "label": "03: pool1", 
+            "time_ms": 85.6545, 
+            "time_s": 0.0856545, 
+            "timestamp": "0522 10:44:47.441350"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 4, 
+            "label": "04: fire2/squeeze1x1", 
+            "time_ms": 253.203, 
+            "time_s": 0.253203, 
+            "timestamp": "0522 10:44:47.441376"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 4, 
+            "label": "04: fire2/squeeze1x1", 
+            "time_ms": 378.566, 
+            "time_s": 0.37856599999999996, 
+            "timestamp": "0522 10:44:47.441435"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 5, 
+            "label": "05: fire2/relu_squeeze1x1", 
+            "time_ms": 1.97571, 
+            "time_s": 0.0019757100000000003, 
+            "timestamp": "0522 10:44:47.441460"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 5, 
+            "label": "05: fire2/relu_squeeze1x1", 
+            "time_ms": 0.49149, 
+            "time_s": 0.00049149, 
+            "timestamp": "0522 10:44:47.441483"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 6, 
+            "label": "06: fire2/squeeze1x1_fire2/relu_squeeze1x1_0_split", 
+            "time_ms": 0.31637, 
+            "time_s": 0.00031637, 
+            "timestamp": "0522 10:44:47.441506"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 6, 
+            "label": "06: fire2/squeeze1x1_fire2/relu_squeeze1x1_0_split", 
+            "time_ms": 0.391077, 
+            "time_s": 0.00039107700000000004, 
+            "timestamp": "0522 10:44:47.441529"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 7, 
+            "label": "07: fire2/expand1x1", 
+            "time_ms": 71.3147, 
+            "time_s": 0.07131470000000001, 
+            "timestamp": "0522 10:44:47.441551"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 7, 
+            "label": "07: fire2/expand1x1", 
+            "time_ms": 350.737, 
+            "time_s": 0.350737, 
+            "timestamp": "0522 10:44:47.441576"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 8, 
+            "label": "08: fire2/relu_expand1x1", 
+            "time_ms": 6.33591, 
+            "time_s": 0.00633591, 
+            "timestamp": "0522 10:44:47.441599"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 8, 
+            "label": "08: fire2/relu_expand1x1", 
+            "time_ms": 0.964434, 
+            "time_s": 0.000964434, 
+            "timestamp": "0522 10:44:47.441622"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 9, 
+            "label": "09: fire2/expand3x3", 
+            "time_ms": 573.012, 
+            "time_s": 0.573012, 
+            "timestamp": "0522 10:44:47.441645"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 9, 
+            "label": "09: fire2/expand3x3", 
+            "time_ms": 940.77, 
+            "time_s": 0.94077, 
+            "timestamp": "0522 10:44:47.441668"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 10, 
+            "label": "10: fire2/relu_expand3x3", 
+            "time_ms": 6.90245, 
+            "time_s": 0.00690245, 
+            "timestamp": "0522 10:44:47.441694"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 10, 
+            "label": "10: fire2/relu_expand3x3", 
+            "time_ms": 0.300825, 
+            "time_s": 0.000300825, 
+            "timestamp": "0522 10:44:47.441715"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 11, 
+            "label": "11: fire2/concat", 
+            "time_ms": 10.8535, 
+            "time_s": 0.0108535, 
+            "timestamp": "0522 10:44:47.441738"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 11, 
+            "label": "11: fire2/concat", 
+            "time_ms": 0.294013, 
+            "time_s": 0.00029401300000000003, 
+            "timestamp": "0522 10:44:47.441762"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 12, 
+            "label": "12: fire3/squeeze1x1", 
+            "time_ms": 498.236, 
+            "time_s": 0.498236, 
+            "timestamp": "0522 10:44:47.441786"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 12, 
+            "label": "12: fire3/squeeze1x1", 
+            "time_ms": 603.704, 
+            "time_s": 0.603704, 
+            "timestamp": "0522 10:44:47.441809"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 13, 
+            "label": "13: fire3/relu_squeeze1x1", 
+            "time_ms": 2.00401, 
+            "time_s": 0.00200401, 
+            "timestamp": "0522 10:44:47.441834"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 13, 
+            "label": "13: fire3/relu_squeeze1x1", 
+            "time_ms": 0.33411, 
+            "time_s": 0.00033411000000000004, 
+            "timestamp": "0522 10:44:47.441856"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 14, 
+            "label": "14: fire3/squeeze1x1_fire3/relu_squeeze1x1_0_split", 
+            "time_ms": 0.322822, 
+            "time_s": 0.000322822, 
+            "timestamp": "0522 10:44:47.441879"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 14, 
+            "label": "14: fire3/squeeze1x1_fire3/relu_squeeze1x1_0_split", 
+            "time_ms": 0.349493, 
+            "time_s": 0.000349493, 
+            "timestamp": "0522 10:44:47.441902"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 15, 
+            "label": "15: fire3/expand1x1", 
+            "time_ms": 69.6004, 
+            "time_s": 0.06960039999999999, 
+            "timestamp": "0522 10:44:47.441925"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 15, 
+            "label": "15: fire3/expand1x1", 
+            "time_ms": 345.698, 
+            "time_s": 0.345698, 
+            "timestamp": "0522 10:44:47.441948"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 16, 
+            "label": "16: fire3/relu_expand1x1", 
+            "time_ms": 7.51391, 
+            "time_s": 0.00751391, 
+            "timestamp": "0522 10:44:47.441972"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 16, 
+            "label": "16: fire3/relu_expand1x1", 
+            "time_ms": 0.40124, 
+            "time_s": 0.00040124, 
+            "timestamp": "0522 10:44:47.441994"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 17, 
+            "label": "17: fire3/expand3x3", 
+            "time_ms": 558.23, 
+            "time_s": 0.55823, 
+            "timestamp": "0522 10:44:47.442016"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 17, 
+            "label": "17: fire3/expand3x3", 
+            "time_ms": 921.815, 
+            "time_s": 0.921815, 
+            "timestamp": "0522 10:44:47.442040"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 18, 
+            "label": "18: fire3/relu_expand3x3", 
+            "time_ms": 6.88938, 
+            "time_s": 0.0068893800000000005, 
+            "timestamp": "0522 10:44:47.442065"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 18, 
+            "label": "18: fire3/relu_expand3x3", 
+            "time_ms": 0.267829, 
+            "time_s": 0.000267829, 
+            "timestamp": "0522 10:44:47.442108"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 19, 
+            "label": "19: fire3/concat", 
+            "time_ms": 10.8825, 
+            "time_s": 0.0108825, 
+            "timestamp": "0522 10:44:47.442131"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 19, 
+            "label": "19: fire3/concat", 
+            "time_ms": 0.292464, 
+            "time_s": 0.000292464, 
+            "timestamp": "0522 10:44:47.442157"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 20, 
+            "label": "20: pool3", 
+            "time_ms": 10.0327, 
+            "time_s": 0.0100327, 
+            "timestamp": "0522 10:44:47.442179"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 20, 
+            "label": "20: pool3", 
+            "time_ms": 43.5702, 
+            "time_s": 0.0435702, 
+            "timestamp": "0522 10:44:47.442203"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 21, 
+            "label": "21: fire4/squeeze1x1", 
+            "time_ms": 135.402, 
+            "time_s": 0.135402, 
+            "timestamp": "0522 10:44:47.442226"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 21, 
+            "label": "21: fire4/squeeze1x1", 
+            "time_ms": 168.348, 
+            "time_s": 0.16834800000000003, 
+            "timestamp": "0522 10:44:47.442250"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 22, 
+            "label": "22: fire4/relu_squeeze1x1", 
+            "time_ms": 1.29516, 
+            "time_s": 0.00129516, 
+            "timestamp": "0522 10:44:47.442275"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 22, 
+            "label": "22: fire4/relu_squeeze1x1", 
+            "time_ms": 0.280299, 
+            "time_s": 0.000280299, 
+            "timestamp": "0522 10:44:47.442296"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 23, 
+            "label": "23: fire4/squeeze1x1_fire4/relu_squeeze1x1_0_split", 
+            "time_ms": 0.307146, 
+            "time_s": 0.000307146, 
+            "timestamp": "0522 10:44:47.442319"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 23, 
+            "label": "23: fire4/squeeze1x1_fire4/relu_squeeze1x1_0_split", 
+            "time_ms": 0.301319, 
+            "time_s": 0.00030131900000000003, 
+            "timestamp": "0522 10:44:47.442342"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 24, 
+            "label": "24: fire4/expand1x1", 
+            "time_ms": 71.288, 
+            "time_s": 0.071288, 
+            "timestamp": "0522 10:44:47.442364"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 24, 
+            "label": "24: fire4/expand1x1", 
+            "time_ms": 154.004, 
+            "time_s": 0.154004, 
+            "timestamp": "0522 10:44:47.442387"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 25, 
+            "label": "25: fire4/relu_expand1x1", 
+            "time_ms": 3.86979, 
+            "time_s": 0.00386979, 
+            "timestamp": "0522 10:44:47.442411"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 25, 
+            "label": "25: fire4/relu_expand1x1", 
+            "time_ms": 0.634934, 
+            "time_s": 0.000634934, 
+            "timestamp": "0522 10:44:47.442435"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 26, 
+            "label": "26: fire4/expand3x3", 
+            "time_ms": 599.679, 
+            "time_s": 0.599679, 
+            "timestamp": "0522 10:44:47.442456"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 26, 
+            "label": "26: fire4/expand3x3", 
+            "time_ms": 734.996, 
+            "time_s": 0.734996, 
+            "timestamp": "0522 10:44:47.442481"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 27, 
+            "label": "27: fire4/relu_expand3x3", 
+            "time_ms": 4.3002, 
+            "time_s": 0.0043002000000000005, 
+            "timestamp": "0522 10:44:47.442504"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 27, 
+            "label": "27: fire4/relu_expand3x3", 
+            "time_ms": 0.279778, 
+            "time_s": 0.00027977800000000006, 
+            "timestamp": "0522 10:44:47.442528"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 28, 
+            "label": "28: fire4/concat", 
+            "time_ms": 8.62733, 
+            "time_s": 0.00862733, 
+            "timestamp": "0522 10:44:47.442550"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 28, 
+            "label": "28: fire4/concat", 
+            "time_ms": 0.285502, 
+            "time_s": 0.000285502, 
+            "timestamp": "0522 10:44:47.442584"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 29, 
+            "label": "29: fire5/squeeze1x1", 
+            "time_ms": 269.343, 
+            "time_s": 0.269343, 
+            "timestamp": "0522 10:44:47.442607"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 29, 
+            "label": "29: fire5/squeeze1x1", 
+            "time_ms": 296.791, 
+            "time_s": 0.296791, 
+            "timestamp": "0522 10:44:47.442631"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 30, 
+            "label": "30: fire5/relu_squeeze1x1", 
+            "time_ms": 1.59676, 
+            "time_s": 0.00159676, 
+            "timestamp": "0522 10:44:47.442656"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 30, 
+            "label": "30: fire5/relu_squeeze1x1", 
+            "time_ms": 0.285953, 
+            "time_s": 0.00028595300000000003, 
+            "timestamp": "0522 10:44:47.442678"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 31, 
+            "label": "31: fire5/squeeze1x1_fire5/relu_squeeze1x1_0_split", 
+            "time_ms": 0.422852, 
+            "time_s": 0.00042285200000000004, 
+            "timestamp": "0522 10:44:47.442700"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 31, 
+            "label": "31: fire5/squeeze1x1_fire5/relu_squeeze1x1_0_split", 
+            "time_ms": 0.291068, 
+            "time_s": 0.000291068, 
+            "timestamp": "0522 10:44:47.442723"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 32, 
+            "label": "32: fire5/expand1x1", 
+            "time_ms": 70.8391, 
+            "time_s": 0.0708391, 
+            "timestamp": "0522 10:44:47.442745"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 32, 
+            "label": "32: fire5/expand1x1", 
+            "time_ms": 154.559, 
+            "time_s": 0.154559, 
+            "timestamp": "0522 10:44:47.442770"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 33, 
+            "label": "33: fire5/relu_expand1x1", 
+            "time_ms": 3.60393, 
+            "time_s": 0.00360393, 
+            "timestamp": "0522 10:44:47.442792"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 33, 
+            "label": "33: fire5/relu_expand1x1", 
+            "time_ms": 0.307981, 
+            "time_s": 0.00030798100000000003, 
+            "timestamp": "0522 10:44:47.442816"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 34, 
+            "label": "34: fire5/expand3x3", 
+            "time_ms": 600.456, 
+            "time_s": 0.600456, 
+            "timestamp": "0522 10:44:47.442838"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 34, 
+            "label": "34: fire5/expand3x3", 
+            "time_ms": 754.274, 
+            "time_s": 0.754274, 
+            "timestamp": "0522 10:44:47.442862"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 35, 
+            "label": "35: fire5/relu_expand3x3", 
+            "time_ms": 4.06656, 
+            "time_s": 0.00406656, 
+            "timestamp": "0522 10:44:47.442886"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 35, 
+            "label": "35: fire5/relu_expand3x3", 
+            "time_ms": 0.274893, 
+            "time_s": 0.000274893, 
+            "timestamp": "0522 10:44:47.442909"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 36, 
+            "label": "36: fire5/concat", 
+            "time_ms": 5.92086, 
+            "time_s": 0.00592086, 
+            "timestamp": "0522 10:44:47.442930"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 36, 
+            "label": "36: fire5/concat", 
+            "time_ms": 0.278507, 
+            "time_s": 0.000278507, 
+            "timestamp": "0522 10:44:47.442952"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 37, 
+            "label": "37: pool5", 
+            "time_ms": 5.63233, 
+            "time_s": 0.00563233, 
+            "timestamp": "0522 10:44:47.442975"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 37, 
+            "label": "37: pool5", 
+            "time_ms": 22.4348, 
+            "time_s": 0.0224348, 
+            "timestamp": "0522 10:44:47.442997"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 38, 
+            "label": "38: fire6/squeeze1x1", 
+            "time_ms": 83.0646, 
+            "time_s": 0.0830646, 
+            "timestamp": "0522 10:44:47.443022"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 38, 
+            "label": "38: fire6/squeeze1x1", 
+            "time_ms": 91.5691, 
+            "time_s": 0.09156910000000001, 
+            "timestamp": "0522 10:44:47.443047"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 39, 
+            "label": "39: fire6/relu_squeeze1x1", 
+            "time_ms": 1.0213, 
+            "time_s": 0.0010213000000000002, 
+            "timestamp": "0522 10:44:47.443070"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 39, 
+            "label": "39: fire6/relu_squeeze1x1", 
+            "time_ms": 0.269243, 
+            "time_s": 0.000269243, 
+            "timestamp": "0522 10:44:47.443110"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 40, 
+            "label": "40: fire6/squeeze1x1_fire6/relu_squeeze1x1_0_split", 
+            "time_ms": 0.348291, 
+            "time_s": 0.00034829100000000003, 
+            "timestamp": "0522 10:44:47.443133"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 40, 
+            "label": "40: fire6/squeeze1x1_fire6/relu_squeeze1x1_0_split", 
+            "time_ms": 0.291528, 
+            "time_s": 0.000291528, 
+            "timestamp": "0522 10:44:47.443156"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 41, 
+            "label": "41: fire6/expand1x1", 
+            "time_ms": 46.7527, 
+            "time_s": 0.0467527, 
+            "timestamp": "0522 10:44:47.443178"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 41, 
+            "label": "41: fire6/expand1x1", 
+            "time_ms": 65.021, 
+            "time_s": 0.065021, 
+            "timestamp": "0522 10:44:47.443202"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 42, 
+            "label": "42: fire6/relu_expand1x1", 
+            "time_ms": 1.7588, 
+            "time_s": 0.0017588, 
+            "timestamp": "0522 10:44:47.443226"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 42, 
+            "label": "42: fire6/relu_expand1x1", 
+            "time_ms": 0.319296, 
+            "time_s": 0.00031929600000000005, 
+            "timestamp": "0522 10:44:47.443248"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 43, 
+            "label": "43: fire6/expand3x3", 
+            "time_ms": 412.884, 
+            "time_s": 0.41288400000000003, 
+            "timestamp": "0522 10:44:47.443271"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 43, 
+            "label": "43: fire6/expand3x3", 
+            "time_ms": 427.396, 
+            "time_s": 0.427396, 
+            "timestamp": "0522 10:44:47.443295"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 44, 
+            "label": "44: fire6/relu_expand3x3", 
+            "time_ms": 1.81739, 
+            "time_s": 0.00181739, 
+            "timestamp": "0522 10:44:47.443318"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 44, 
+            "label": "44: fire6/relu_expand3x3", 
+            "time_ms": 0.266167, 
+            "time_s": 0.000266167, 
+            "timestamp": "0522 10:44:47.443341"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 45, 
+            "label": "45: fire6/concat", 
+            "time_ms": 2.67223, 
+            "time_s": 0.00267223, 
+            "timestamp": "0522 10:44:47.443363"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 45, 
+            "label": "45: fire6/concat", 
+            "time_ms": 0.299195, 
+            "time_s": 0.000299195, 
+            "timestamp": "0522 10:44:47.443387"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 46, 
+            "label": "46: fire7/squeeze1x1", 
+            "time_ms": 124.759, 
+            "time_s": 0.12475900000000001, 
+            "timestamp": "0522 10:44:47.443408"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 46, 
+            "label": "46: fire7/squeeze1x1", 
+            "time_ms": 124.902, 
+            "time_s": 0.124902, 
+            "timestamp": "0522 10:44:47.443434"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 47, 
+            "label": "47: fire7/relu_squeeze1x1", 
+            "time_ms": 0.899437, 
+            "time_s": 0.0008994370000000001, 
+            "timestamp": "0522 10:44:47.443456"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 47, 
+            "label": "47: fire7/relu_squeeze1x1", 
+            "time_ms": 0.271886, 
+            "time_s": 0.00027188600000000005, 
+            "timestamp": "0522 10:44:47.443480"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 48, 
+            "label": "48: fire7/squeeze1x1_fire7/relu_squeeze1x1_0_split", 
+            "time_ms": 0.300837, 
+            "time_s": 0.00030083700000000003, 
+            "timestamp": "0522 10:44:47.443501"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 48, 
+            "label": "48: fire7/squeeze1x1_fire7/relu_squeeze1x1_0_split", 
+            "time_ms": 0.303788, 
+            "time_s": 0.000303788, 
+            "timestamp": "0522 10:44:47.443524"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 49, 
+            "label": "49: fire7/expand1x1", 
+            "time_ms": 47.6321, 
+            "time_s": 0.047632100000000004, 
+            "timestamp": "0522 10:44:47.443547"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 49, 
+            "label": "49: fire7/expand1x1", 
+            "time_ms": 63.823, 
+            "time_s": 0.063823, 
+            "timestamp": "0522 10:44:47.443570"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 50, 
+            "label": "50: fire7/relu_expand1x1", 
+            "time_ms": 1.73792, 
+            "time_s": 0.00173792, 
+            "timestamp": "0522 10:44:47.443594"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 50, 
+            "label": "50: fire7/relu_expand1x1", 
+            "time_ms": 0.272723, 
+            "time_s": 0.000272723, 
+            "timestamp": "0522 10:44:47.443617"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 51, 
+            "label": "51: fire7/expand3x3", 
+            "time_ms": 410.76, 
+            "time_s": 0.41076, 
+            "timestamp": "0522 10:44:47.443639"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 51, 
+            "label": "51: fire7/expand3x3", 
+            "time_ms": 409.471, 
+            "time_s": 0.40947100000000003, 
+            "timestamp": "0522 10:44:47.443663"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 52, 
+            "label": "52: fire7/relu_expand3x3", 
+            "time_ms": 2.42003, 
+            "time_s": 0.00242003, 
+            "timestamp": "0522 10:44:47.443698"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 52, 
+            "label": "52: fire7/relu_expand3x3", 
+            "time_ms": 0.280007, 
+            "time_s": 0.00028000700000000003, 
+            "timestamp": "0522 10:44:47.443722"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 53, 
+            "label": "53: fire7/concat", 
+            "time_ms": 3.11928, 
+            "time_s": 0.00311928, 
+            "timestamp": "0522 10:44:47.443744"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 53, 
+            "label": "53: fire7/concat", 
+            "time_ms": 0.271806, 
+            "time_s": 0.000271806, 
+            "timestamp": "0522 10:44:47.443766"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 54, 
+            "label": "54: fire8/squeeze1x1", 
+            "time_ms": 122.078, 
+            "time_s": 0.122078, 
+            "timestamp": "0522 10:44:47.443789"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 54, 
+            "label": "54: fire8/squeeze1x1", 
+            "time_ms": 124.045, 
+            "time_s": 0.124045, 
+            "timestamp": "0522 10:44:47.443814"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 55, 
+            "label": "55: fire8/relu_squeeze1x1", 
+            "time_ms": 0.987302, 
+            "time_s": 0.000987302, 
+            "timestamp": "0522 10:44:47.443836"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 55, 
+            "label": "55: fire8/relu_squeeze1x1", 
+            "time_ms": 0.284704, 
+            "time_s": 0.00028470400000000004, 
+            "timestamp": "0522 10:44:47.443859"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 56, 
+            "label": "56: fire8/squeeze1x1_fire8/relu_squeeze1x1_0_split", 
+            "time_ms": 0.303042, 
+            "time_s": 0.000303042, 
+            "timestamp": "0522 10:44:47.443881"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 56, 
+            "label": "56: fire8/squeeze1x1_fire8/relu_squeeze1x1_0_split", 
+            "time_ms": 0.729169, 
+            "time_s": 0.000729169, 
+            "timestamp": "0522 10:44:47.443904"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 57, 
+            "label": "57: fire8/expand1x1", 
+            "time_ms": 83.3442, 
+            "time_s": 0.08334420000000001, 
+            "timestamp": "0522 10:44:47.443927"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 57, 
+            "label": "57: fire8/expand1x1", 
+            "time_ms": 82.6492, 
+            "time_s": 0.08264919999999999, 
+            "timestamp": "0522 10:44:47.443950"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 58, 
+            "label": "58: fire8/relu_expand1x1", 
+            "time_ms": 2.07584, 
+            "time_s": 0.00207584, 
+            "timestamp": "0522 10:44:47.443974"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 58, 
+            "label": "58: fire8/relu_expand1x1", 
+            "time_ms": 0.291384, 
+            "time_s": 0.000291384, 
+            "timestamp": "0522 10:44:47.443996"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 59, 
+            "label": "59: fire8/expand3x3", 
+            "time_ms": 739.851, 
+            "time_s": 0.739851, 
+            "timestamp": "0522 10:44:47.444018"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 59, 
+            "label": "59: fire8/expand3x3", 
+            "time_ms": 703.328, 
+            "time_s": 0.703328, 
+            "timestamp": "0522 10:44:47.444042"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 60, 
+            "label": "60: fire8/relu_expand3x3", 
+            "time_ms": 3.64836, 
+            "time_s": 0.00364836, 
+            "timestamp": "0522 10:44:47.444067"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 60, 
+            "label": "60: fire8/relu_expand3x3", 
+            "time_ms": 0.298763, 
+            "time_s": 0.000298763, 
+            "timestamp": "0522 10:44:47.444104"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 61, 
+            "label": "61: fire8/concat", 
+            "time_ms": 3.49868, 
+            "time_s": 0.0034986799999999997, 
+            "timestamp": "0522 10:44:47.444128"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 61, 
+            "label": "61: fire8/concat", 
+            "time_ms": 0.311388, 
+            "time_s": 0.000311388, 
+            "timestamp": "0522 10:44:47.444150"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 62, 
+            "label": "62: fire9/squeeze1x1", 
+            "time_ms": 167.741, 
+            "time_s": 0.16774100000000003, 
+            "timestamp": "0522 10:44:47.444172"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 62, 
+            "label": "62: fire9/squeeze1x1", 
+            "time_ms": 163.186, 
+            "time_s": 0.163186, 
+            "timestamp": "0522 10:44:47.444196"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 63, 
+            "label": "63: fire9/relu_squeeze1x1", 
+            "time_ms": 0.952046, 
+            "time_s": 0.000952046, 
+            "timestamp": "0522 10:44:47.444221"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 63, 
+            "label": "63: fire9/relu_squeeze1x1", 
+            "time_ms": 0.350079, 
+            "time_s": 0.000350079, 
+            "timestamp": "0522 10:44:47.444243"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 64, 
+            "label": "64: fire9/squeeze1x1_fire9/relu_squeeze1x1_0_split", 
+            "time_ms": 0.292605, 
+            "time_s": 0.00029260500000000004, 
+            "timestamp": "0522 10:44:47.444265"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 64, 
+            "label": "64: fire9/squeeze1x1_fire9/relu_squeeze1x1_0_split", 
+            "time_ms": 0.386928, 
+            "time_s": 0.000386928, 
+            "timestamp": "0522 10:44:47.444288"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 65, 
+            "label": "65: fire9/expand1x1", 
+            "time_ms": 84.8673, 
+            "time_s": 0.0848673, 
+            "timestamp": "0522 10:44:47.444310"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 65, 
+            "label": "65: fire9/expand1x1", 
+            "time_ms": 82.8596, 
+            "time_s": 0.0828596, 
+            "timestamp": "0522 10:44:47.444334"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 66, 
+            "label": "66: fire9/relu_expand1x1", 
+            "time_ms": 2.24153, 
+            "time_s": 0.0022415300000000003, 
+            "timestamp": "0522 10:44:47.444358"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 66, 
+            "label": "66: fire9/relu_expand1x1", 
+            "time_ms": 0.333622, 
+            "time_s": 0.000333622, 
+            "timestamp": "0522 10:44:47.444380"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 67, 
+            "label": "67: fire9/expand3x3", 
+            "time_ms": 723.245, 
+            "time_s": 0.723245, 
+            "timestamp": "0522 10:44:47.444403"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 67, 
+            "label": "67: fire9/expand3x3", 
+            "time_ms": 712.919, 
+            "time_s": 0.712919, 
+            "timestamp": "0522 10:44:47.444427"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 68, 
+            "label": "68: fire9/relu_expand3x3", 
+            "time_ms": 3.73516, 
+            "time_s": 0.00373516, 
+            "timestamp": "0522 10:44:47.444452"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 68, 
+            "label": "68: fire9/relu_expand3x3", 
+            "time_ms": 0.335243, 
+            "time_s": 0.00033524300000000004, 
+            "timestamp": "0522 10:44:47.444474"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 69, 
+            "label": "69: fire9/concat", 
+            "time_ms": 3.55386, 
+            "time_s": 0.00355386, 
+            "timestamp": "0522 10:44:47.444496"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 69, 
+            "label": "69: fire9/concat", 
+            "time_ms": 0.350104, 
+            "time_s": 0.000350104, 
+            "timestamp": "0522 10:44:47.444519"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 70, 
+            "label": "70: drop9", 
+            "time_ms": 117.394, 
+            "time_s": 0.11739400000000001, 
+            "timestamp": "0522 10:44:47.444541"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 70, 
+            "label": "70: drop9", 
+            "time_ms": 0.290379, 
+            "time_s": 0.000290379, 
+            "timestamp": "0522 10:44:47.444564"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 71, 
+            "label": "71: conv10", 
+            "time_ms": 2654.02, 
+            "time_s": 2.65402, 
+            "timestamp": "0522 10:44:47.444587"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 71, 
+            "label": "71: conv10", 
+            "time_ms": 2501.5, 
+            "time_s": 2.5015, 
+            "timestamp": "0522 10:44:47.444612"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 72, 
+            "label": "72: relu_conv10", 
+            "time_ms": 7.13344, 
+            "time_s": 0.0071334400000000004, 
+            "timestamp": "0522 10:44:47.444635"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 72, 
+            "label": "72: relu_conv10", 
+            "time_ms": 0.363475, 
+            "time_s": 0.000363475, 
+            "timestamp": "0522 10:44:47.444658"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 73, 
+            "label": "73: pool10", 
+            "time_ms": 9.29455, 
+            "time_s": 0.009294549999999999, 
+            "timestamp": "0522 10:44:47.444679"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 73, 
+            "label": "73: pool10", 
+            "time_ms": 35.0144, 
+            "time_s": 0.0350144, 
+            "timestamp": "0522 10:44:47.444702"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 74, 
+            "label": "74: prob", 
+            "time_ms": 8.27831, 
+            "time_s": 0.008278309999999999, 
+            "timestamp": "0522 10:44:47.444726"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 74, 
+            "label": "74: prob", 
+            "time_ms": 32.1581, 
+            "time_s": 0.032158099999999995, 
+            "timestamp": "0522 10:44:47.444749"
+          }
+        ], 
+        "post_processed": "yes", 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "time_bw_ms": 12956.8, 
+        "time_bw_s": 12.9568, 
+        "time_fw_ms": 10354.3, 
+        "time_fw_s": 10.3543, 
+        "time_fwbw_ms": 23319.3, 
+        "time_fwbw_s": 23.3193, 
+        "time_total_ms": 23319.3, 
+        "time_total_ms_kernel_0": 23319.3, 
+        "time_total_s": 23.3193, 
+        "time_total_s_kernel_0": 23.3193, 
+        "total_execution_time": 23.3193
+      }
+    }, 
+    {
+      "run": {
+        "REAL_ENV_CK_CAFFE_BATCH_SIZE": "14", 
+        "REAL_ENV_CK_CAFFE_ITERATIONS": "1", 
+        "REAL_ENV_CK_CAFFE_MODEL": "/home/test/CK_REPOS/ck-caffe/program/caffe-time-opencl/tmp/tmp-OOztRs.prototxt", 
+        "execution_time": 23.4174, 
+        "execution_time_with_module": 35.92501997947693, 
+        "memory_bytes": 452407144, 
+        "memory_kbytes": 452407.14400000003, 
+        "memory_mbytes": 452.40714399999996, 
+        "per_layer_info": [
+          {
+            "direction": "forward", 
+            "index": 0, 
+            "label": "00: input", 
+            "time_ms": 0.327531, 
+            "time_s": 0.00032753100000000005, 
+            "timestamp": "0522 10:45:25.429752"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 0, 
+            "label": "00: input", 
+            "time_ms": 0.51115, 
+            "time_s": 0.00051115, 
+            "timestamp": "0522 10:45:25.429783"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 1, 
+            "label": "01: conv1", 
+            "time_ms": 522.291, 
+            "time_s": 0.5222910000000001, 
+            "timestamp": "0522 10:45:25.429808"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 1, 
+            "label": "01: conv1", 
+            "time_ms": 1343.78, 
+            "time_s": 1.34378, 
+            "timestamp": "0522 10:45:25.429836"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 2, 
+            "label": "02: relu_conv1", 
+            "time_ms": 25.003, 
+            "time_s": 0.025003, 
+            "timestamp": "0522 10:45:25.429863"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 2, 
+            "label": "02: relu_conv1", 
+            "time_ms": 0.344422, 
+            "time_s": 0.000344422, 
+            "timestamp": "0522 10:45:25.429889"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 3, 
+            "label": "03: pool1", 
+            "time_ms": 19.4989, 
+            "time_s": 0.0194989, 
+            "timestamp": "0522 10:45:25.429913"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 3, 
+            "label": "03: pool1", 
+            "time_ms": 88.0956, 
+            "time_s": 0.08809560000000001, 
+            "timestamp": "0522 10:45:25.429939"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 4, 
+            "label": "04: fire2/squeeze1x1", 
+            "time_ms": 257.864, 
+            "time_s": 0.257864, 
+            "timestamp": "0522 10:45:25.429965"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 4, 
+            "label": "04: fire2/squeeze1x1", 
+            "time_ms": 370.334, 
+            "time_s": 0.370334, 
+            "timestamp": "0522 10:45:25.430028"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 5, 
+            "label": "05: fire2/relu_squeeze1x1", 
+            "time_ms": 2.00792, 
+            "time_s": 0.00200792, 
+            "timestamp": "0522 10:45:25.430055"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 5, 
+            "label": "05: fire2/relu_squeeze1x1", 
+            "time_ms": 0.638418, 
+            "time_s": 0.0006384180000000001, 
+            "timestamp": "0522 10:45:25.430109"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 6, 
+            "label": "06: fire2/squeeze1x1_fire2/relu_squeeze1x1_0_split", 
+            "time_ms": 0.325003, 
+            "time_s": 0.000325003, 
+            "timestamp": "0522 10:45:25.430138"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 6, 
+            "label": "06: fire2/squeeze1x1_fire2/relu_squeeze1x1_0_split", 
+            "time_ms": 0.406723, 
+            "time_s": 0.000406723, 
+            "timestamp": "0522 10:45:25.430161"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 7, 
+            "label": "07: fire2/expand1x1", 
+            "time_ms": 70.1695, 
+            "time_s": 0.0701695, 
+            "timestamp": "0522 10:45:25.430184"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 7, 
+            "label": "07: fire2/expand1x1", 
+            "time_ms": 343.397, 
+            "time_s": 0.343397, 
+            "timestamp": "0522 10:45:25.430209"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 8, 
+            "label": "08: fire2/relu_expand1x1", 
+            "time_ms": 6.82569, 
+            "time_s": 0.00682569, 
+            "timestamp": "0522 10:45:25.430233"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 8, 
+            "label": "08: fire2/relu_expand1x1", 
+            "time_ms": 0.93702, 
+            "time_s": 0.00093702, 
+            "timestamp": "0522 10:45:25.430256"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 9, 
+            "label": "09: fire2/expand3x3", 
+            "time_ms": 571.223, 
+            "time_s": 0.5712229999999999, 
+            "timestamp": "0522 10:45:25.430279"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 9, 
+            "label": "09: fire2/expand3x3", 
+            "time_ms": 928.05, 
+            "time_s": 0.9280499999999999, 
+            "timestamp": "0522 10:45:25.430304"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 10, 
+            "label": "10: fire2/relu_expand3x3", 
+            "time_ms": 7.14653, 
+            "time_s": 0.007146530000000001, 
+            "timestamp": "0522 10:45:25.430327"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 10, 
+            "label": "10: fire2/relu_expand3x3", 
+            "time_ms": 0.313005, 
+            "time_s": 0.000313005, 
+            "timestamp": "0522 10:45:25.430351"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 11, 
+            "label": "11: fire2/concat", 
+            "time_ms": 11.4724, 
+            "time_s": 0.0114724, 
+            "timestamp": "0522 10:45:25.430373"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 11, 
+            "label": "11: fire2/concat", 
+            "time_ms": 0.566129, 
+            "time_s": 0.000566129, 
+            "timestamp": "0522 10:45:25.430397"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 12, 
+            "label": "12: fire3/squeeze1x1", 
+            "time_ms": 511.64, 
+            "time_s": 0.51164, 
+            "timestamp": "0522 10:45:25.430420"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 12, 
+            "label": "12: fire3/squeeze1x1", 
+            "time_ms": 615.468, 
+            "time_s": 0.615468, 
+            "timestamp": "0522 10:45:25.430444"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 13, 
+            "label": "13: fire3/relu_squeeze1x1", 
+            "time_ms": 2.17601, 
+            "time_s": 0.0021760100000000004, 
+            "timestamp": "0522 10:45:25.430469"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 13, 
+            "label": "13: fire3/relu_squeeze1x1", 
+            "time_ms": 0.30125, 
+            "time_s": 0.00030125000000000003, 
+            "timestamp": "0522 10:45:25.430490"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 14, 
+            "label": "14: fire3/squeeze1x1_fire3/relu_squeeze1x1_0_split", 
+            "time_ms": 0.297433, 
+            "time_s": 0.000297433, 
+            "timestamp": "0522 10:45:25.430513"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 14, 
+            "label": "14: fire3/squeeze1x1_fire3/relu_squeeze1x1_0_split", 
+            "time_ms": 0.318414, 
+            "time_s": 0.000318414, 
+            "timestamp": "0522 10:45:25.430536"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 15, 
+            "label": "15: fire3/expand1x1", 
+            "time_ms": 68.8744, 
+            "time_s": 0.0688744, 
+            "timestamp": "0522 10:45:25.430558"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 15, 
+            "label": "15: fire3/expand1x1", 
+            "time_ms": 349.761, 
+            "time_s": 0.34976100000000004, 
+            "timestamp": "0522 10:45:25.430583"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 16, 
+            "label": "16: fire3/relu_expand1x1", 
+            "time_ms": 7.16576, 
+            "time_s": 0.00716576, 
+            "timestamp": "0522 10:45:25.430608"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 16, 
+            "label": "16: fire3/relu_expand1x1", 
+            "time_ms": 0.620251, 
+            "time_s": 0.000620251, 
+            "timestamp": "0522 10:45:25.430630"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 17, 
+            "label": "17: fire3/expand3x3", 
+            "time_ms": 562.493, 
+            "time_s": 0.562493, 
+            "timestamp": "0522 10:45:25.430652"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 17, 
+            "label": "17: fire3/expand3x3", 
+            "time_ms": 923.741, 
+            "time_s": 0.923741, 
+            "timestamp": "0522 10:45:25.430676"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 18, 
+            "label": "18: fire3/relu_expand3x3", 
+            "time_ms": 7.63412, 
+            "time_s": 0.00763412, 
+            "timestamp": "0522 10:45:25.430701"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 18, 
+            "label": "18: fire3/relu_expand3x3", 
+            "time_ms": 0.265662, 
+            "time_s": 0.000265662, 
+            "timestamp": "0522 10:45:25.430723"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 19, 
+            "label": "19: fire3/concat", 
+            "time_ms": 10.7457, 
+            "time_s": 0.0107457, 
+            "timestamp": "0522 10:45:25.430747"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 19, 
+            "label": "19: fire3/concat", 
+            "time_ms": 0.31837, 
+            "time_s": 0.00031837, 
+            "timestamp": "0522 10:45:25.430770"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 20, 
+            "label": "20: pool3", 
+            "time_ms": 10.0642, 
+            "time_s": 0.0100642, 
+            "timestamp": "0522 10:45:25.430794"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 20, 
+            "label": "20: pool3", 
+            "time_ms": 50.157, 
+            "time_s": 0.050157, 
+            "timestamp": "0522 10:45:25.430817"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 21, 
+            "label": "21: fire4/squeeze1x1", 
+            "time_ms": 136.694, 
+            "time_s": 0.13669399999999998, 
+            "timestamp": "0522 10:45:25.430841"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 21, 
+            "label": "21: fire4/squeeze1x1", 
+            "time_ms": 166.933, 
+            "time_s": 0.166933, 
+            "timestamp": "0522 10:45:25.430866"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 22, 
+            "label": "22: fire4/relu_squeeze1x1", 
+            "time_ms": 1.3256, 
+            "time_s": 0.0013256, 
+            "timestamp": "0522 10:45:25.430891"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 22, 
+            "label": "22: fire4/relu_squeeze1x1", 
+            "time_ms": 0.281506, 
+            "time_s": 0.000281506, 
+            "timestamp": "0522 10:45:25.430912"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 23, 
+            "label": "23: fire4/squeeze1x1_fire4/relu_squeeze1x1_0_split", 
+            "time_ms": 0.30629, 
+            "time_s": 0.00030629, 
+            "timestamp": "0522 10:45:25.430935"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 23, 
+            "label": "23: fire4/squeeze1x1_fire4/relu_squeeze1x1_0_split", 
+            "time_ms": 0.29533, 
+            "time_s": 0.00029533, 
+            "timestamp": "0522 10:45:25.430958"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 24, 
+            "label": "24: fire4/expand1x1", 
+            "time_ms": 70.3902, 
+            "time_s": 0.0703902, 
+            "timestamp": "0522 10:45:25.430980"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 24, 
+            "label": "24: fire4/expand1x1", 
+            "time_ms": 152.386, 
+            "time_s": 0.152386, 
+            "timestamp": "0522 10:45:25.431005"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 25, 
+            "label": "25: fire4/relu_expand1x1", 
+            "time_ms": 3.97023, 
+            "time_s": 0.00397023, 
+            "timestamp": "0522 10:45:25.431030"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 25, 
+            "label": "25: fire4/relu_expand1x1", 
+            "time_ms": 0.532801, 
+            "time_s": 0.000532801, 
+            "timestamp": "0522 10:45:25.431051"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 26, 
+            "label": "26: fire4/expand3x3", 
+            "time_ms": 612.721, 
+            "time_s": 0.6127210000000001, 
+            "timestamp": "0522 10:45:25.431102"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 26, 
+            "label": "26: fire4/expand3x3", 
+            "time_ms": 751.059, 
+            "time_s": 0.751059, 
+            "timestamp": "0522 10:45:25.431134"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 27, 
+            "label": "27: fire4/relu_expand3x3", 
+            "time_ms": 4.16089, 
+            "time_s": 0.00416089, 
+            "timestamp": "0522 10:45:25.431159"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 27, 
+            "label": "27: fire4/relu_expand3x3", 
+            "time_ms": 0.345387, 
+            "time_s": 0.000345387, 
+            "timestamp": "0522 10:45:25.431183"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 28, 
+            "label": "28: fire4/concat", 
+            "time_ms": 6.20259, 
+            "time_s": 0.00620259, 
+            "timestamp": "0522 10:45:25.431206"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 28, 
+            "label": "28: fire4/concat", 
+            "time_ms": 0.396128, 
+            "time_s": 0.000396128, 
+            "timestamp": "0522 10:45:25.431265"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 29, 
+            "label": "29: fire5/squeeze1x1", 
+            "time_ms": 273.345, 
+            "time_s": 0.27334500000000006, 
+            "timestamp": "0522 10:45:25.431290"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 29, 
+            "label": "29: fire5/squeeze1x1", 
+            "time_ms": 303.01, 
+            "time_s": 0.30301, 
+            "timestamp": "0522 10:45:25.431314"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 30, 
+            "label": "30: fire5/relu_squeeze1x1", 
+            "time_ms": 8.16407, 
+            "time_s": 0.00816407, 
+            "timestamp": "0522 10:45:25.431339"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 30, 
+            "label": "30: fire5/relu_squeeze1x1", 
+            "time_ms": 0.409134, 
+            "time_s": 0.000409134, 
+            "timestamp": "0522 10:45:25.431360"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 31, 
+            "label": "31: fire5/squeeze1x1_fire5/relu_squeeze1x1_0_split", 
+            "time_ms": 0.314195, 
+            "time_s": 0.000314195, 
+            "timestamp": "0522 10:45:25.431383"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 31, 
+            "label": "31: fire5/squeeze1x1_fire5/relu_squeeze1x1_0_split", 
+            "time_ms": 0.447108, 
+            "time_s": 0.000447108, 
+            "timestamp": "0522 10:45:25.431406"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 32, 
+            "label": "32: fire5/expand1x1", 
+            "time_ms": 70.6138, 
+            "time_s": 0.0706138, 
+            "timestamp": "0522 10:45:25.431428"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 32, 
+            "label": "32: fire5/expand1x1", 
+            "time_ms": 150.614, 
+            "time_s": 0.150614, 
+            "timestamp": "0522 10:45:25.431452"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 33, 
+            "label": "33: fire5/relu_expand1x1", 
+            "time_ms": 3.60101, 
+            "time_s": 0.00360101, 
+            "timestamp": "0522 10:45:25.431476"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 33, 
+            "label": "33: fire5/relu_expand1x1", 
+            "time_ms": 0.953089, 
+            "time_s": 0.000953089, 
+            "timestamp": "0522 10:45:25.431499"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 34, 
+            "label": "34: fire5/expand3x3", 
+            "time_ms": 603.392, 
+            "time_s": 0.603392, 
+            "timestamp": "0522 10:45:25.431521"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 34, 
+            "label": "34: fire5/expand3x3", 
+            "time_ms": 752.57, 
+            "time_s": 0.7525700000000001, 
+            "timestamp": "0522 10:45:25.431545"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 35, 
+            "label": "35: fire5/relu_expand3x3", 
+            "time_ms": 5.62718, 
+            "time_s": 0.00562718, 
+            "timestamp": "0522 10:45:25.431568"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 35, 
+            "label": "35: fire5/relu_expand3x3", 
+            "time_ms": 0.377564, 
+            "time_s": 0.000377564, 
+            "timestamp": "0522 10:45:25.431591"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 36, 
+            "label": "36: fire5/concat", 
+            "time_ms": 6.39921, 
+            "time_s": 0.00639921, 
+            "timestamp": "0522 10:45:25.431613"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 36, 
+            "label": "36: fire5/concat", 
+            "time_ms": 0.378736, 
+            "time_s": 0.000378736, 
+            "timestamp": "0522 10:45:25.431635"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 37, 
+            "label": "37: pool5", 
+            "time_ms": 5.92463, 
+            "time_s": 0.00592463, 
+            "timestamp": "0522 10:45:25.431658"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 37, 
+            "label": "37: pool5", 
+            "time_ms": 28.5989, 
+            "time_s": 0.0285989, 
+            "timestamp": "0522 10:45:25.431680"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 38, 
+            "label": "38: fire6/squeeze1x1", 
+            "time_ms": 84.2601, 
+            "time_s": 0.08426009999999999, 
+            "timestamp": "0522 10:45:25.431704"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 38, 
+            "label": "38: fire6/squeeze1x1", 
+            "time_ms": 91.8952, 
+            "time_s": 0.09189520000000001, 
+            "timestamp": "0522 10:45:25.431728"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 39, 
+            "label": "39: fire6/relu_squeeze1x1", 
+            "time_ms": 1.00578, 
+            "time_s": 0.00100578, 
+            "timestamp": "0522 10:45:25.431752"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 39, 
+            "label": "39: fire6/relu_squeeze1x1", 
+            "time_ms": 0.284277, 
+            "time_s": 0.000284277, 
+            "timestamp": "0522 10:45:25.431774"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 40, 
+            "label": "40: fire6/squeeze1x1_fire6/relu_squeeze1x1_0_split", 
+            "time_ms": 0.397917, 
+            "time_s": 0.000397917, 
+            "timestamp": "0522 10:45:25.431797"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 40, 
+            "label": "40: fire6/squeeze1x1_fire6/relu_squeeze1x1_0_split", 
+            "time_ms": 0.285192, 
+            "time_s": 0.00028519200000000003, 
+            "timestamp": "0522 10:45:25.431819"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 41, 
+            "label": "41: fire6/expand1x1", 
+            "time_ms": 48.439, 
+            "time_s": 0.048439, 
+            "timestamp": "0522 10:45:25.431841"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 41, 
+            "label": "41: fire6/expand1x1", 
+            "time_ms": 64.6538, 
+            "time_s": 0.06465380000000001, 
+            "timestamp": "0522 10:45:25.431864"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 42, 
+            "label": "42: fire6/relu_expand1x1", 
+            "time_ms": 1.62132, 
+            "time_s": 0.00162132, 
+            "timestamp": "0522 10:45:25.431890"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 42, 
+            "label": "42: fire6/relu_expand1x1", 
+            "time_ms": 0.323494, 
+            "time_s": 0.000323494, 
+            "timestamp": "0522 10:45:25.431911"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 43, 
+            "label": "43: fire6/expand3x3", 
+            "time_ms": 426.351, 
+            "time_s": 0.42635100000000004, 
+            "timestamp": "0522 10:45:25.431934"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 43, 
+            "label": "43: fire6/expand3x3", 
+            "time_ms": 417.799, 
+            "time_s": 0.417799, 
+            "timestamp": "0522 10:45:25.431957"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 44, 
+            "label": "44: fire6/relu_expand3x3", 
+            "time_ms": 1.86737, 
+            "time_s": 0.00186737, 
+            "timestamp": "0522 10:45:25.431982"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 44, 
+            "label": "44: fire6/relu_expand3x3", 
+            "time_ms": 0.32223, 
+            "time_s": 0.00032223, 
+            "timestamp": "0522 10:45:25.432003"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 45, 
+            "label": "45: fire6/concat", 
+            "time_ms": 2.54177, 
+            "time_s": 0.00254177, 
+            "timestamp": "0522 10:45:25.432026"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 45, 
+            "label": "45: fire6/concat", 
+            "time_ms": 0.432672, 
+            "time_s": 0.000432672, 
+            "timestamp": "0522 10:45:25.432047"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 46, 
+            "label": "46: fire7/squeeze1x1", 
+            "time_ms": 124.49, 
+            "time_s": 0.12449, 
+            "timestamp": "0522 10:45:25.432070"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 46, 
+            "label": "46: fire7/squeeze1x1", 
+            "time_ms": 125.121, 
+            "time_s": 0.125121, 
+            "timestamp": "0522 10:45:25.432118"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 47, 
+            "label": "47: fire7/relu_squeeze1x1", 
+            "time_ms": 1.24085, 
+            "time_s": 0.00124085, 
+            "timestamp": "0522 10:45:25.432143"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 47, 
+            "label": "47: fire7/relu_squeeze1x1", 
+            "time_ms": 0.278608, 
+            "time_s": 0.000278608, 
+            "timestamp": "0522 10:45:25.432166"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 48, 
+            "label": "48: fire7/squeeze1x1_fire7/relu_squeeze1x1_0_split", 
+            "time_ms": 0.594889, 
+            "time_s": 0.000594889, 
+            "timestamp": "0522 10:45:25.432188"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 48, 
+            "label": "48: fire7/squeeze1x1_fire7/relu_squeeze1x1_0_split", 
+            "time_ms": 0.31864, 
+            "time_s": 0.00031863999999999997, 
+            "timestamp": "0522 10:45:25.432210"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 49, 
+            "label": "49: fire7/expand1x1", 
+            "time_ms": 49.4499, 
+            "time_s": 0.0494499, 
+            "timestamp": "0522 10:45:25.432234"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 49, 
+            "label": "49: fire7/expand1x1", 
+            "time_ms": 64.4964, 
+            "time_s": 0.0644964, 
+            "timestamp": "0522 10:45:25.432257"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 50, 
+            "label": "50: fire7/relu_expand1x1", 
+            "time_ms": 1.64837, 
+            "time_s": 0.00164837, 
+            "timestamp": "0522 10:45:25.432281"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 50, 
+            "label": "50: fire7/relu_expand1x1", 
+            "time_ms": 0.355329, 
+            "time_s": 0.00035532900000000004, 
+            "timestamp": "0522 10:45:25.432303"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 51, 
+            "label": "51: fire7/expand3x3", 
+            "time_ms": 422.843, 
+            "time_s": 0.422843, 
+            "timestamp": "0522 10:45:25.432327"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 51, 
+            "label": "51: fire7/expand3x3", 
+            "time_ms": 417.425, 
+            "time_s": 0.41742500000000005, 
+            "timestamp": "0522 10:45:25.432349"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 52, 
+            "label": "52: fire7/relu_expand3x3", 
+            "time_ms": 1.65638, 
+            "time_s": 0.00165638, 
+            "timestamp": "0522 10:45:25.432385"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 52, 
+            "label": "52: fire7/relu_expand3x3", 
+            "time_ms": 0.267607, 
+            "time_s": 0.000267607, 
+            "timestamp": "0522 10:45:25.432410"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 53, 
+            "label": "53: fire7/concat", 
+            "time_ms": 2.60444, 
+            "time_s": 0.00260444, 
+            "timestamp": "0522 10:45:25.432431"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 53, 
+            "label": "53: fire7/concat", 
+            "time_ms": 0.284566, 
+            "time_s": 0.000284566, 
+            "timestamp": "0522 10:45:25.432454"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 54, 
+            "label": "54: fire8/squeeze1x1", 
+            "time_ms": 123.237, 
+            "time_s": 0.123237, 
+            "timestamp": "0522 10:45:25.433429"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 54, 
+            "label": "54: fire8/squeeze1x1", 
+            "time_ms": 125.999, 
+            "time_s": 0.125999, 
+            "timestamp": "0522 10:45:25.433465"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 55, 
+            "label": "55: fire8/relu_squeeze1x1", 
+            "time_ms": 0.988399, 
+            "time_s": 0.000988399, 
+            "timestamp": "0522 10:45:25.433492"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 55, 
+            "label": "55: fire8/relu_squeeze1x1", 
+            "time_ms": 0.299303, 
+            "time_s": 0.000299303, 
+            "timestamp": "0522 10:45:25.433516"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 56, 
+            "label": "56: fire8/squeeze1x1_fire8/relu_squeeze1x1_0_split", 
+            "time_ms": 0.290224, 
+            "time_s": 0.000290224, 
+            "timestamp": "0522 10:45:25.433539"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 56, 
+            "label": "56: fire8/squeeze1x1_fire8/relu_squeeze1x1_0_split", 
+            "time_ms": 0.289779, 
+            "time_s": 0.000289779, 
+            "timestamp": "0522 10:45:25.433563"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 57, 
+            "label": "57: fire8/expand1x1", 
+            "time_ms": 84.0929, 
+            "time_s": 0.0840929, 
+            "timestamp": "0522 10:45:25.433586"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 57, 
+            "label": "57: fire8/expand1x1", 
+            "time_ms": 88.3576, 
+            "time_s": 0.08835760000000001, 
+            "timestamp": "0522 10:45:25.433611"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 58, 
+            "label": "58: fire8/relu_expand1x1", 
+            "time_ms": 1.98267, 
+            "time_s": 0.00198267, 
+            "timestamp": "0522 10:45:25.433635"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 58, 
+            "label": "58: fire8/relu_expand1x1", 
+            "time_ms": 0.31229, 
+            "time_s": 0.00031229, 
+            "timestamp": "0522 10:45:25.433776"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 59, 
+            "label": "59: fire8/expand3x3", 
+            "time_ms": 723.462, 
+            "time_s": 0.723462, 
+            "timestamp": "0522 10:45:25.433801"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 59, 
+            "label": "59: fire8/expand3x3", 
+            "time_ms": 711.619, 
+            "time_s": 0.711619, 
+            "timestamp": "0522 10:45:25.433826"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 60, 
+            "label": "60: fire8/relu_expand3x3", 
+            "time_ms": 2.33292, 
+            "time_s": 0.00233292, 
+            "timestamp": "0522 10:45:25.433851"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 60, 
+            "label": "60: fire8/relu_expand3x3", 
+            "time_ms": 0.279788, 
+            "time_s": 0.000279788, 
+            "timestamp": "0522 10:45:25.433873"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 61, 
+            "label": "61: fire8/concat", 
+            "time_ms": 3.60742, 
+            "time_s": 0.00360742, 
+            "timestamp": "0522 10:45:25.433895"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 61, 
+            "label": "61: fire8/concat", 
+            "time_ms": 0.386694, 
+            "time_s": 0.000386694, 
+            "timestamp": "0522 10:45:25.433917"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 62, 
+            "label": "62: fire9/squeeze1x1", 
+            "time_ms": 169.979, 
+            "time_s": 0.16997900000000002, 
+            "timestamp": "0522 10:45:25.433940"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 62, 
+            "label": "62: fire9/squeeze1x1", 
+            "time_ms": 166.001, 
+            "time_s": 0.166001, 
+            "timestamp": "0522 10:45:25.433964"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 63, 
+            "label": "63: fire9/relu_squeeze1x1", 
+            "time_ms": 0.960031, 
+            "time_s": 0.000960031, 
+            "timestamp": "0522 10:45:25.433989"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 63, 
+            "label": "63: fire9/relu_squeeze1x1", 
+            "time_ms": 0.288019, 
+            "time_s": 0.00028801900000000004, 
+            "timestamp": "0522 10:45:25.434011"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 64, 
+            "label": "64: fire9/squeeze1x1_fire9/relu_squeeze1x1_0_split", 
+            "time_ms": 0.294288, 
+            "time_s": 0.000294288, 
+            "timestamp": "0522 10:45:25.434033"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 64, 
+            "label": "64: fire9/squeeze1x1_fire9/relu_squeeze1x1_0_split", 
+            "time_ms": 0.313301, 
+            "time_s": 0.000313301, 
+            "timestamp": "0522 10:45:25.434056"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 65, 
+            "label": "65: fire9/expand1x1", 
+            "time_ms": 85.2086, 
+            "time_s": 0.08520860000000001, 
+            "timestamp": "0522 10:45:25.434139"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 65, 
+            "label": "65: fire9/expand1x1", 
+            "time_ms": 84.9843, 
+            "time_s": 0.08498430000000001, 
+            "timestamp": "0522 10:45:25.434166"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 66, 
+            "label": "66: fire9/relu_expand1x1", 
+            "time_ms": 2.06241, 
+            "time_s": 0.0020624099999999998, 
+            "timestamp": "0522 10:45:25.434190"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 66, 
+            "label": "66: fire9/relu_expand1x1", 
+            "time_ms": 0.282906, 
+            "time_s": 0.000282906, 
+            "timestamp": "0522 10:45:25.434213"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 67, 
+            "label": "67: fire9/expand3x3", 
+            "time_ms": 746.379, 
+            "time_s": 0.746379, 
+            "timestamp": "0522 10:45:25.434236"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 67, 
+            "label": "67: fire9/expand3x3", 
+            "time_ms": 703.442, 
+            "time_s": 0.703442, 
+            "timestamp": "0522 10:45:25.434260"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 68, 
+            "label": "68: fire9/relu_expand3x3", 
+            "time_ms": 3.10937, 
+            "time_s": 0.00310937, 
+            "timestamp": "0522 10:45:25.434283"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 68, 
+            "label": "68: fire9/relu_expand3x3", 
+            "time_ms": 0.287057, 
+            "time_s": 0.000287057, 
+            "timestamp": "0522 10:45:25.434306"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 69, 
+            "label": "69: fire9/concat", 
+            "time_ms": 3.77478, 
+            "time_s": 0.0037747799999999997, 
+            "timestamp": "0522 10:45:25.434329"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 69, 
+            "label": "69: fire9/concat", 
+            "time_ms": 0.336861, 
+            "time_s": 0.00033686100000000004, 
+            "timestamp": "0522 10:45:25.434351"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 70, 
+            "label": "70: drop9", 
+            "time_ms": 103.602, 
+            "time_s": 0.103602, 
+            "timestamp": "0522 10:45:25.434373"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 70, 
+            "label": "70: drop9", 
+            "time_ms": 0.396661, 
+            "time_s": 0.000396661, 
+            "timestamp": "0522 10:45:25.434397"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 71, 
+            "label": "71: conv10", 
+            "time_ms": 2655.24, 
+            "time_s": 2.65524, 
+            "timestamp": "0522 10:45:25.434420"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 71, 
+            "label": "71: conv10", 
+            "time_ms": 2472.47, 
+            "time_s": 2.47247, 
+            "timestamp": "0522 10:45:25.434444"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 72, 
+            "label": "72: relu_conv10", 
+            "time_ms": 7.20786, 
+            "time_s": 0.00720786, 
+            "timestamp": "0522 10:45:25.434469"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 72, 
+            "label": "72: relu_conv10", 
+            "time_ms": 0.277263, 
+            "time_s": 0.000277263, 
+            "timestamp": "0522 10:45:25.434491"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 73, 
+            "label": "73: pool10", 
+            "time_ms": 8.05742, 
+            "time_s": 0.008057420000000001, 
+            "timestamp": "0522 10:45:25.434514"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 73, 
+            "label": "73: pool10", 
+            "time_ms": 31.8065, 
+            "time_s": 0.0318065, 
+            "timestamp": "0522 10:45:25.434536"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 74, 
+            "label": "74: prob", 
+            "time_ms": 5.27435, 
+            "time_s": 0.0052743500000000006, 
+            "timestamp": "0522 10:45:25.434561"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 74, 
+            "label": "74: prob", 
+            "time_ms": 25.0096, 
+            "time_s": 0.0250096, 
+            "timestamp": "0522 10:45:25.434582"
+          }
+        ], 
+        "post_processed": "yes", 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "time_bw_ms": 12982.9, 
+        "time_bw_s": 12.9829, 
+        "time_fw_ms": 10426.9, 
+        "time_fw_s": 10.4269, 
+        "time_fwbw_ms": 23417.4, 
+        "time_fwbw_s": 23.4174, 
+        "time_total_ms": 23417.4, 
+        "time_total_ms_kernel_0": 23417.4, 
+        "time_total_s": 23.4174, 
+        "time_total_s_kernel_0": 23.4174, 
+        "total_execution_time": 23.4174
+      }
+    }, 
+    {
+      "run": {
+        "REAL_ENV_CK_CAFFE_BATCH_SIZE": "14", 
+        "REAL_ENV_CK_CAFFE_ITERATIONS": "1", 
+        "REAL_ENV_CK_CAFFE_MODEL": "/home/test/CK_REPOS/ck-caffe/program/caffe-time-opencl/tmp/tmp-5KU4de.prototxt", 
+        "execution_time": 23.4539, 
+        "execution_time_with_module": 36.01104378700256, 
+        "memory_bytes": 452407144, 
+        "memory_kbytes": 452407.14400000003, 
+        "memory_mbytes": 452.40714399999996, 
+        "per_layer_info": [
+          {
+            "direction": "forward", 
+            "index": 0, 
+            "label": "00: input", 
+            "time_ms": 1.36062, 
+            "time_s": 0.0013606199999999999, 
+            "timestamp": "0522 10:46:03.479156"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 0, 
+            "label": "00: input", 
+            "time_ms": 0.73814, 
+            "time_s": 0.0007381400000000001, 
+            "timestamp": "0522 10:46:03.479185"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 1, 
+            "label": "01: conv1", 
+            "time_ms": 528.612, 
+            "time_s": 0.528612, 
+            "timestamp": "0522 10:46:03.479212"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 1, 
+            "label": "01: conv1", 
+            "time_ms": 1324.69, 
+            "time_s": 1.3246900000000001, 
+            "timestamp": "0522 10:46:03.479239"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 2, 
+            "label": "02: relu_conv1", 
+            "time_ms": 27.7698, 
+            "time_s": 0.0277698, 
+            "timestamp": "0522 10:46:03.479265"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 2, 
+            "label": "02: relu_conv1", 
+            "time_ms": 0.522481, 
+            "time_s": 0.000522481, 
+            "timestamp": "0522 10:46:03.479291"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 3, 
+            "label": "03: pool1", 
+            "time_ms": 18.6212, 
+            "time_s": 0.0186212, 
+            "timestamp": "0522 10:46:03.479315"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 3, 
+            "label": "03: pool1", 
+            "time_ms": 106.871, 
+            "time_s": 0.106871, 
+            "timestamp": "0522 10:46:03.479341"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 4, 
+            "label": "04: fire2/squeeze1x1", 
+            "time_ms": 251.406, 
+            "time_s": 0.251406, 
+            "timestamp": "0522 10:46:03.479383"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 4, 
+            "label": "04: fire2/squeeze1x1", 
+            "time_ms": 369.968, 
+            "time_s": 0.369968, 
+            "timestamp": "0522 10:46:03.479461"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 5, 
+            "label": "05: fire2/relu_squeeze1x1", 
+            "time_ms": 2.15298, 
+            "time_s": 0.00215298, 
+            "timestamp": "0522 10:46:03.479490"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 5, 
+            "label": "05: fire2/relu_squeeze1x1", 
+            "time_ms": 0.317233, 
+            "time_s": 0.000317233, 
+            "timestamp": "0522 10:46:03.479513"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 6, 
+            "label": "06: fire2/squeeze1x1_fire2/relu_squeeze1x1_0_split", 
+            "time_ms": 0.393209, 
+            "time_s": 0.000393209, 
+            "timestamp": "0522 10:46:03.479537"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 6, 
+            "label": "06: fire2/squeeze1x1_fire2/relu_squeeze1x1_0_split", 
+            "time_ms": 0.421686, 
+            "time_s": 0.000421686, 
+            "timestamp": "0522 10:46:03.479559"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 7, 
+            "label": "07: fire2/expand1x1", 
+            "time_ms": 69.2016, 
+            "time_s": 0.0692016, 
+            "timestamp": "0522 10:46:03.479583"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 7, 
+            "label": "07: fire2/expand1x1", 
+            "time_ms": 350.16, 
+            "time_s": 0.35016, 
+            "timestamp": "0522 10:46:03.479607"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 8, 
+            "label": "08: fire2/relu_expand1x1", 
+            "time_ms": 6.95098, 
+            "time_s": 0.006950980000000001, 
+            "timestamp": "0522 10:46:03.479631"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 8, 
+            "label": "08: fire2/relu_expand1x1", 
+            "time_ms": 0.386108, 
+            "time_s": 0.000386108, 
+            "timestamp": "0522 10:46:03.479655"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 9, 
+            "label": "09: fire2/expand3x3", 
+            "time_ms": 571.976, 
+            "time_s": 0.571976, 
+            "timestamp": "0522 10:46:03.479677"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 9, 
+            "label": "09: fire2/expand3x3", 
+            "time_ms": 937.438, 
+            "time_s": 0.937438, 
+            "timestamp": "0522 10:46:03.479701"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 10, 
+            "label": "10: fire2/relu_expand3x3", 
+            "time_ms": 8.11432, 
+            "time_s": 0.00811432, 
+            "timestamp": "0522 10:46:03.479725"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 10, 
+            "label": "10: fire2/relu_expand3x3", 
+            "time_ms": 0.766779, 
+            "time_s": 0.000766779, 
+            "timestamp": "0522 10:46:03.479748"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 11, 
+            "label": "11: fire2/concat", 
+            "time_ms": 12.4027, 
+            "time_s": 0.0124027, 
+            "timestamp": "0522 10:46:03.479775"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 11, 
+            "label": "11: fire2/concat", 
+            "time_ms": 2.22347, 
+            "time_s": 0.00222347, 
+            "timestamp": "0522 10:46:03.479799"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 12, 
+            "label": "12: fire3/squeeze1x1", 
+            "time_ms": 532.083, 
+            "time_s": 0.532083, 
+            "timestamp": "0522 10:46:03.479822"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 12, 
+            "label": "12: fire3/squeeze1x1", 
+            "time_ms": 595.31, 
+            "time_s": 0.59531, 
+            "timestamp": "0522 10:46:03.479846"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 13, 
+            "label": "13: fire3/relu_squeeze1x1", 
+            "time_ms": 1.99031, 
+            "time_s": 0.00199031, 
+            "timestamp": "0522 10:46:03.479871"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 13, 
+            "label": "13: fire3/relu_squeeze1x1", 
+            "time_ms": 0.285323, 
+            "time_s": 0.000285323, 
+            "timestamp": "0522 10:46:03.479893"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 14, 
+            "label": "14: fire3/squeeze1x1_fire3/relu_squeeze1x1_0_split", 
+            "time_ms": 0.327611, 
+            "time_s": 0.000327611, 
+            "timestamp": "0522 10:46:03.479917"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 14, 
+            "label": "14: fire3/squeeze1x1_fire3/relu_squeeze1x1_0_split", 
+            "time_ms": 0.292492, 
+            "time_s": 0.000292492, 
+            "timestamp": "0522 10:46:03.479938"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 15, 
+            "label": "15: fire3/expand1x1", 
+            "time_ms": 73.5143, 
+            "time_s": 0.0735143, 
+            "timestamp": "0522 10:46:03.479961"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 15, 
+            "label": "15: fire3/expand1x1", 
+            "time_ms": 356.153, 
+            "time_s": 0.35615300000000005, 
+            "timestamp": "0522 10:46:03.479985"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 16, 
+            "label": "16: fire3/relu_expand1x1", 
+            "time_ms": 6.91034, 
+            "time_s": 0.00691034, 
+            "timestamp": "0522 10:46:03.480010"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 16, 
+            "label": "16: fire3/relu_expand1x1", 
+            "time_ms": 0.296183, 
+            "time_s": 0.000296183, 
+            "timestamp": "0522 10:46:03.480032"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 17, 
+            "label": "17: fire3/expand3x3", 
+            "time_ms": 567.249, 
+            "time_s": 0.567249, 
+            "timestamp": "0522 10:46:03.480054"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 17, 
+            "label": "17: fire3/expand3x3", 
+            "time_ms": 914.176, 
+            "time_s": 0.9141760000000001, 
+            "timestamp": "0522 10:46:03.480095"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 18, 
+            "label": "18: fire3/relu_expand3x3", 
+            "time_ms": 6.57808, 
+            "time_s": 0.00657808, 
+            "timestamp": "0522 10:46:03.480125"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 18, 
+            "label": "18: fire3/relu_expand3x3", 
+            "time_ms": 0.27355, 
+            "time_s": 0.00027355, 
+            "timestamp": "0522 10:46:03.480149"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 19, 
+            "label": "19: fire3/concat", 
+            "time_ms": 11.1275, 
+            "time_s": 0.0111275, 
+            "timestamp": "0522 10:46:03.480170"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 19, 
+            "label": "19: fire3/concat", 
+            "time_ms": 0.293657, 
+            "time_s": 0.000293657, 
+            "timestamp": "0522 10:46:03.480195"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 20, 
+            "label": "20: pool3", 
+            "time_ms": 10.5337, 
+            "time_s": 0.0105337, 
+            "timestamp": "0522 10:46:03.480217"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 20, 
+            "label": "20: pool3", 
+            "time_ms": 41.756, 
+            "time_s": 0.041756, 
+            "timestamp": "0522 10:46:03.480242"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 21, 
+            "label": "21: fire4/squeeze1x1", 
+            "time_ms": 136.197, 
+            "time_s": 0.136197, 
+            "timestamp": "0522 10:46:03.480265"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 21, 
+            "label": "21: fire4/squeeze1x1", 
+            "time_ms": 174.474, 
+            "time_s": 0.174474, 
+            "timestamp": "0522 10:46:03.480289"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 22, 
+            "label": "22: fire4/relu_squeeze1x1", 
+            "time_ms": 1.31235, 
+            "time_s": 0.0013123499999999999, 
+            "timestamp": "0522 10:46:03.480314"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 22, 
+            "label": "22: fire4/relu_squeeze1x1", 
+            "time_ms": 0.267261, 
+            "time_s": 0.00026726100000000003, 
+            "timestamp": "0522 10:46:03.480336"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 23, 
+            "label": "23: fire4/squeeze1x1_fire4/relu_squeeze1x1_0_split", 
+            "time_ms": 0.312461, 
+            "time_s": 0.000312461, 
+            "timestamp": "0522 10:46:03.480360"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 23, 
+            "label": "23: fire4/squeeze1x1_fire4/relu_squeeze1x1_0_split", 
+            "time_ms": 0.274668, 
+            "time_s": 0.00027466800000000005, 
+            "timestamp": "0522 10:46:03.480381"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 24, 
+            "label": "24: fire4/expand1x1", 
+            "time_ms": 71.3387, 
+            "time_s": 0.0713387, 
+            "timestamp": "0522 10:46:03.480403"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 24, 
+            "label": "24: fire4/expand1x1", 
+            "time_ms": 158.364, 
+            "time_s": 0.158364, 
+            "timestamp": "0522 10:46:03.480428"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 25, 
+            "label": "25: fire4/relu_expand1x1", 
+            "time_ms": 3.73713, 
+            "time_s": 0.00373713, 
+            "timestamp": "0522 10:46:03.480453"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 25, 
+            "label": "25: fire4/relu_expand1x1", 
+            "time_ms": 0.948021, 
+            "time_s": 0.0009480210000000001, 
+            "timestamp": "0522 10:46:03.480474"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 26, 
+            "label": "26: fire4/expand3x3", 
+            "time_ms": 589.186, 
+            "time_s": 0.5891860000000001, 
+            "timestamp": "0522 10:46:03.480497"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 26, 
+            "label": "26: fire4/expand3x3", 
+            "time_ms": 745.145, 
+            "time_s": 0.745145, 
+            "timestamp": "0522 10:46:03.480522"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 27, 
+            "label": "27: fire4/relu_expand3x3", 
+            "time_ms": 3.71259, 
+            "time_s": 0.00371259, 
+            "timestamp": "0522 10:46:03.480546"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 27, 
+            "label": "27: fire4/relu_expand3x3", 
+            "time_ms": 0.269343, 
+            "time_s": 0.000269343, 
+            "timestamp": "0522 10:46:03.480568"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 28, 
+            "label": "28: fire4/concat", 
+            "time_ms": 5.6036, 
+            "time_s": 0.0056036, 
+            "timestamp": "0522 10:46:03.480592"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 28, 
+            "label": "28: fire4/concat", 
+            "time_ms": 0.296215, 
+            "time_s": 0.000296215, 
+            "timestamp": "0522 10:46:03.480628"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 29, 
+            "label": "29: fire5/squeeze1x1", 
+            "time_ms": 271.067, 
+            "time_s": 0.271067, 
+            "timestamp": "0522 10:46:03.480650"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 29, 
+            "label": "29: fire5/squeeze1x1", 
+            "time_ms": 303.932, 
+            "time_s": 0.30393200000000004, 
+            "timestamp": "0522 10:46:03.480674"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 30, 
+            "label": "30: fire5/relu_squeeze1x1", 
+            "time_ms": 1.30189, 
+            "time_s": 0.00130189, 
+            "timestamp": "0522 10:46:03.480698"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 30, 
+            "label": "30: fire5/relu_squeeze1x1", 
+            "time_ms": 0.36775, 
+            "time_s": 0.00036775, 
+            "timestamp": "0522 10:46:03.480721"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 31, 
+            "label": "31: fire5/squeeze1x1_fire5/relu_squeeze1x1_0_split", 
+            "time_ms": 0.321643, 
+            "time_s": 0.00032164300000000004, 
+            "timestamp": "0522 10:46:03.480743"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 31, 
+            "label": "31: fire5/squeeze1x1_fire5/relu_squeeze1x1_0_split", 
+            "time_ms": 0.815181, 
+            "time_s": 0.0008151810000000001, 
+            "timestamp": "0522 10:46:03.480767"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 32, 
+            "label": "32: fire5/expand1x1", 
+            "time_ms": 71.8065, 
+            "time_s": 0.0718065, 
+            "timestamp": "0522 10:46:03.480788"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 32, 
+            "label": "32: fire5/expand1x1", 
+            "time_ms": 149.643, 
+            "time_s": 0.149643, 
+            "timestamp": "0522 10:46:03.480813"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 33, 
+            "label": "33: fire5/relu_expand1x1", 
+            "time_ms": 3.8445, 
+            "time_s": 0.0038445000000000003, 
+            "timestamp": "0522 10:46:03.480837"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 33, 
+            "label": "33: fire5/relu_expand1x1", 
+            "time_ms": 1.13018, 
+            "time_s": 0.00113018, 
+            "timestamp": "0522 10:46:03.480860"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 34, 
+            "label": "34: fire5/expand3x3", 
+            "time_ms": 605.278, 
+            "time_s": 0.605278, 
+            "timestamp": "0522 10:46:03.480882"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 34, 
+            "label": "34: fire5/expand3x3", 
+            "time_ms": 750.599, 
+            "time_s": 0.750599, 
+            "timestamp": "0522 10:46:03.480906"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 35, 
+            "label": "35: fire5/relu_expand3x3", 
+            "time_ms": 4.08221, 
+            "time_s": 0.00408221, 
+            "timestamp": "0522 10:46:03.480931"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 35, 
+            "label": "35: fire5/relu_expand3x3", 
+            "time_ms": 0.283859, 
+            "time_s": 0.00028385899999999997, 
+            "timestamp": "0522 10:46:03.480953"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 36, 
+            "label": "36: fire5/concat", 
+            "time_ms": 6.40453, 
+            "time_s": 0.00640453, 
+            "timestamp": "0522 10:46:03.480975"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 36, 
+            "label": "36: fire5/concat", 
+            "time_ms": 0.314358, 
+            "time_s": 0.00031435800000000004, 
+            "timestamp": "0522 10:46:03.480998"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 37, 
+            "label": "37: pool5", 
+            "time_ms": 6.25937, 
+            "time_s": 0.00625937, 
+            "timestamp": "0522 10:46:03.481019"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 37, 
+            "label": "37: pool5", 
+            "time_ms": 33.7436, 
+            "time_s": 0.0337436, 
+            "timestamp": "0522 10:46:03.481042"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 38, 
+            "label": "38: fire6/squeeze1x1", 
+            "time_ms": 83.479, 
+            "time_s": 0.083479, 
+            "timestamp": "0522 10:46:03.481066"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 38, 
+            "label": "38: fire6/squeeze1x1", 
+            "time_ms": 90.8966, 
+            "time_s": 0.09089660000000001, 
+            "timestamp": "0522 10:46:03.481107"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 39, 
+            "label": "39: fire6/relu_squeeze1x1", 
+            "time_ms": 0.917785, 
+            "time_s": 0.000917785, 
+            "timestamp": "0522 10:46:03.481132"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 39, 
+            "label": "39: fire6/relu_squeeze1x1", 
+            "time_ms": 0.266902, 
+            "time_s": 0.00026690199999999996, 
+            "timestamp": "0522 10:46:03.481155"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 40, 
+            "label": "40: fire6/squeeze1x1_fire6/relu_squeeze1x1_0_split", 
+            "time_ms": 0.310302, 
+            "time_s": 0.00031030200000000004, 
+            "timestamp": "0522 10:46:03.481178"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 40, 
+            "label": "40: fire6/squeeze1x1_fire6/relu_squeeze1x1_0_split", 
+            "time_ms": 0.278797, 
+            "time_s": 0.000278797, 
+            "timestamp": "0522 10:46:03.481200"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 41, 
+            "label": "41: fire6/expand1x1", 
+            "time_ms": 47.333, 
+            "time_s": 0.047333, 
+            "timestamp": "0522 10:46:03.481222"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 41, 
+            "label": "41: fire6/expand1x1", 
+            "time_ms": 64.5083, 
+            "time_s": 0.0645083, 
+            "timestamp": "0522 10:46:03.481247"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 42, 
+            "label": "42: fire6/relu_expand1x1", 
+            "time_ms": 1.92205, 
+            "time_s": 0.00192205, 
+            "timestamp": "0522 10:46:03.481271"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 42, 
+            "label": "42: fire6/relu_expand1x1", 
+            "time_ms": 0.281088, 
+            "time_s": 0.00028108800000000003, 
+            "timestamp": "0522 10:46:03.481294"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 43, 
+            "label": "43: fire6/expand3x3", 
+            "time_ms": 419.906, 
+            "time_s": 0.419906, 
+            "timestamp": "0522 10:46:03.481317"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 43, 
+            "label": "43: fire6/expand3x3", 
+            "time_ms": 416.993, 
+            "time_s": 0.416993, 
+            "timestamp": "0522 10:46:03.481340"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 44, 
+            "label": "44: fire6/relu_expand3x3", 
+            "time_ms": 1.74125, 
+            "time_s": 0.00174125, 
+            "timestamp": "0522 10:46:03.481365"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 44, 
+            "label": "44: fire6/relu_expand3x3", 
+            "time_ms": 0.267628, 
+            "time_s": 0.000267628, 
+            "timestamp": "0522 10:46:03.481387"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 45, 
+            "label": "45: fire6/concat", 
+            "time_ms": 2.77566, 
+            "time_s": 0.0027756599999999997, 
+            "timestamp": "0522 10:46:03.481410"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 45, 
+            "label": "45: fire6/concat", 
+            "time_ms": 0.310598, 
+            "time_s": 0.000310598, 
+            "timestamp": "0522 10:46:03.481432"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 46, 
+            "label": "46: fire7/squeeze1x1", 
+            "time_ms": 122.884, 
+            "time_s": 0.12288400000000001, 
+            "timestamp": "0522 10:46:03.481456"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 46, 
+            "label": "46: fire7/squeeze1x1", 
+            "time_ms": 124.461, 
+            "time_s": 0.124461, 
+            "timestamp": "0522 10:46:03.481479"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 47, 
+            "label": "47: fire7/relu_squeeze1x1", 
+            "time_ms": 0.932347, 
+            "time_s": 0.000932347, 
+            "timestamp": "0522 10:46:03.481503"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 47, 
+            "label": "47: fire7/relu_squeeze1x1", 
+            "time_ms": 0.287707, 
+            "time_s": 0.000287707, 
+            "timestamp": "0522 10:46:03.481526"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 48, 
+            "label": "48: fire7/squeeze1x1_fire7/relu_squeeze1x1_0_split", 
+            "time_ms": 0.306123, 
+            "time_s": 0.000306123, 
+            "timestamp": "0522 10:46:03.481549"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 48, 
+            "label": "48: fire7/squeeze1x1_fire7/relu_squeeze1x1_0_split", 
+            "time_ms": 0.271313, 
+            "time_s": 0.000271313, 
+            "timestamp": "0522 10:46:03.481571"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 49, 
+            "label": "49: fire7/expand1x1", 
+            "time_ms": 47.8394, 
+            "time_s": 0.0478394, 
+            "timestamp": "0522 10:46:03.481593"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 49, 
+            "label": "49: fire7/expand1x1", 
+            "time_ms": 67.34, 
+            "time_s": 0.06734000000000001, 
+            "timestamp": "0522 10:46:03.481618"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 50, 
+            "label": "50: fire7/relu_expand1x1", 
+            "time_ms": 1.98251, 
+            "time_s": 0.00198251, 
+            "timestamp": "0522 10:46:03.481642"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 50, 
+            "label": "50: fire7/relu_expand1x1", 
+            "time_ms": 0.293952, 
+            "time_s": 0.000293952, 
+            "timestamp": "0522 10:46:03.481664"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 51, 
+            "label": "51: fire7/expand3x3", 
+            "time_ms": 414.314, 
+            "time_s": 0.414314, 
+            "timestamp": "0522 10:46:03.481688"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 51, 
+            "label": "51: fire7/expand3x3", 
+            "time_ms": 414.899, 
+            "time_s": 0.414899, 
+            "timestamp": "0522 10:46:03.481711"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 52, 
+            "label": "52: fire7/relu_expand3x3", 
+            "time_ms": 1.7569, 
+            "time_s": 0.0017569, 
+            "timestamp": "0522 10:46:03.481747"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 52, 
+            "label": "52: fire7/relu_expand3x3", 
+            "time_ms": 0.263671, 
+            "time_s": 0.000263671, 
+            "timestamp": "0522 10:46:03.481770"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 53, 
+            "label": "53: fire7/concat", 
+            "time_ms": 2.59002, 
+            "time_s": 0.00259002, 
+            "timestamp": "0522 10:46:03.481793"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 53, 
+            "label": "53: fire7/concat", 
+            "time_ms": 0.292663, 
+            "time_s": 0.000292663, 
+            "timestamp": "0522 10:46:03.481815"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 54, 
+            "label": "54: fire8/squeeze1x1", 
+            "time_ms": 121.448, 
+            "time_s": 0.121448, 
+            "timestamp": "0522 10:46:03.481838"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 54, 
+            "label": "54: fire8/squeeze1x1", 
+            "time_ms": 126.341, 
+            "time_s": 0.126341, 
+            "timestamp": "0522 10:46:03.481863"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 55, 
+            "label": "55: fire8/relu_squeeze1x1", 
+            "time_ms": 0.960358, 
+            "time_s": 0.000960358, 
+            "timestamp": "0522 10:46:03.481886"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 55, 
+            "label": "55: fire8/relu_squeeze1x1", 
+            "time_ms": 0.270329, 
+            "time_s": 0.000270329, 
+            "timestamp": "0522 10:46:03.481909"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 56, 
+            "label": "56: fire8/squeeze1x1_fire8/relu_squeeze1x1_0_split", 
+            "time_ms": 0.296688, 
+            "time_s": 0.00029668800000000003, 
+            "timestamp": "0522 10:46:03.481931"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 56, 
+            "label": "56: fire8/squeeze1x1_fire8/relu_squeeze1x1_0_split", 
+            "time_ms": 0.275449, 
+            "time_s": 0.000275449, 
+            "timestamp": "0522 10:46:03.481955"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 57, 
+            "label": "57: fire8/expand1x1", 
+            "time_ms": 85.2297, 
+            "time_s": 0.08522969999999999, 
+            "timestamp": "0522 10:46:03.481976"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 57, 
+            "label": "57: fire8/expand1x1", 
+            "time_ms": 87.956, 
+            "time_s": 0.087956, 
+            "timestamp": "0522 10:46:03.482000"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 58, 
+            "label": "58: fire8/relu_expand1x1", 
+            "time_ms": 2.04255, 
+            "time_s": 0.0020425499999999997, 
+            "timestamp": "0522 10:46:03.482024"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 58, 
+            "label": "58: fire8/relu_expand1x1", 
+            "time_ms": 0.309194, 
+            "time_s": 0.00030919400000000005, 
+            "timestamp": "0522 10:46:03.482048"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 59, 
+            "label": "59: fire8/expand3x3", 
+            "time_ms": 741.836, 
+            "time_s": 0.741836, 
+            "timestamp": "0522 10:46:03.482069"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 59, 
+            "label": "59: fire8/expand3x3", 
+            "time_ms": 724.322, 
+            "time_s": 0.724322, 
+            "timestamp": "0522 10:46:03.482110"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 60, 
+            "label": "60: fire8/relu_expand3x3", 
+            "time_ms": 2.82568, 
+            "time_s": 0.00282568, 
+            "timestamp": "0522 10:46:03.482136"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 60, 
+            "label": "60: fire8/relu_expand3x3", 
+            "time_ms": 0.351355, 
+            "time_s": 0.00035135499999999997, 
+            "timestamp": "0522 10:46:03.482157"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 61, 
+            "label": "61: fire8/concat", 
+            "time_ms": 8.14137, 
+            "time_s": 0.00814137, 
+            "timestamp": "0522 10:46:03.482179"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 61, 
+            "label": "61: fire8/concat", 
+            "time_ms": 0.324582, 
+            "time_s": 0.00032458199999999996, 
+            "timestamp": "0522 10:46:03.482203"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 62, 
+            "label": "62: fire9/squeeze1x1", 
+            "time_ms": 166.743, 
+            "time_s": 0.166743, 
+            "timestamp": "0522 10:46:03.482225"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 62, 
+            "label": "62: fire9/squeeze1x1", 
+            "time_ms": 165.721, 
+            "time_s": 0.165721, 
+            "timestamp": "0522 10:46:03.482249"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 63, 
+            "label": "63: fire9/relu_squeeze1x1", 
+            "time_ms": 1.01167, 
+            "time_s": 0.00101167, 
+            "timestamp": "0522 10:46:03.482273"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 63, 
+            "label": "63: fire9/relu_squeeze1x1", 
+            "time_ms": 0.439945, 
+            "time_s": 0.00043994499999999996, 
+            "timestamp": "0522 10:46:03.482295"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 64, 
+            "label": "64: fire9/squeeze1x1_fire9/relu_squeeze1x1_0_split", 
+            "time_ms": 0.324652, 
+            "time_s": 0.000324652, 
+            "timestamp": "0522 10:46:03.482317"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 64, 
+            "label": "64: fire9/squeeze1x1_fire9/relu_squeeze1x1_0_split", 
+            "time_ms": 0.565456, 
+            "time_s": 0.000565456, 
+            "timestamp": "0522 10:46:03.482341"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 65, 
+            "label": "65: fire9/expand1x1", 
+            "time_ms": 85.214, 
+            "time_s": 0.085214, 
+            "timestamp": "0522 10:46:03.482363"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 65, 
+            "label": "65: fire9/expand1x1", 
+            "time_ms": 91.3094, 
+            "time_s": 0.0913094, 
+            "timestamp": "0522 10:46:03.482386"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 66, 
+            "label": "66: fire9/relu_expand1x1", 
+            "time_ms": 2.04201, 
+            "time_s": 0.00204201, 
+            "timestamp": "0522 10:46:03.482410"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 66, 
+            "label": "66: fire9/relu_expand1x1", 
+            "time_ms": 0.487565, 
+            "time_s": 0.000487565, 
+            "timestamp": "0522 10:46:03.482434"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 67, 
+            "label": "67: fire9/expand3x3", 
+            "time_ms": 726.128, 
+            "time_s": 0.7261280000000001, 
+            "timestamp": "0522 10:46:03.482455"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 67, 
+            "label": "67: fire9/expand3x3", 
+            "time_ms": 718.569, 
+            "time_s": 0.718569, 
+            "timestamp": "0522 10:46:03.482481"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 68, 
+            "label": "68: fire9/relu_expand3x3", 
+            "time_ms": 2.60379, 
+            "time_s": 0.00260379, 
+            "timestamp": "0522 10:46:03.482503"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 68, 
+            "label": "68: fire9/relu_expand3x3", 
+            "time_ms": 0.991363, 
+            "time_s": 0.000991363, 
+            "timestamp": "0522 10:46:03.482527"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 69, 
+            "label": "69: fire9/concat", 
+            "time_ms": 3.51339, 
+            "time_s": 0.00351339, 
+            "timestamp": "0522 10:46:03.482549"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 69, 
+            "label": "69: fire9/concat", 
+            "time_ms": 5.54504, 
+            "time_s": 0.00554504, 
+            "timestamp": "0522 10:46:03.482571"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 70, 
+            "label": "70: drop9", 
+            "time_ms": 124.396, 
+            "time_s": 0.124396, 
+            "timestamp": "0522 10:46:03.482594"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 70, 
+            "label": "70: drop9", 
+            "time_ms": 0.924688, 
+            "time_s": 0.000924688, 
+            "timestamp": "0522 10:46:03.482617"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 71, 
+            "label": "71: conv10", 
+            "time_ms": 2683.2, 
+            "time_s": 2.6832, 
+            "timestamp": "0522 10:46:03.482640"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 71, 
+            "label": "71: conv10", 
+            "time_ms": 2462.31, 
+            "time_s": 2.46231, 
+            "timestamp": "0522 10:46:03.482664"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 72, 
+            "label": "72: relu_conv10", 
+            "time_ms": 12.7093, 
+            "time_s": 0.012709300000000001, 
+            "timestamp": "0522 10:46:03.482688"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 72, 
+            "label": "72: relu_conv10", 
+            "time_ms": 0.35072, 
+            "time_s": 0.00035072, 
+            "timestamp": "0522 10:46:03.482712"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 73, 
+            "label": "73: pool10", 
+            "time_ms": 8.59857, 
+            "time_s": 0.00859857, 
+            "timestamp": "0522 10:46:03.482734"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 73, 
+            "label": "73: pool10", 
+            "time_ms": 32.9264, 
+            "time_s": 0.0329264, 
+            "timestamp": "0522 10:46:03.482756"
+          }, 
+          {
+            "direction": "forward", 
+            "index": 74, 
+            "label": "74: prob", 
+            "time_ms": 7.69869, 
+            "time_s": 0.00769869, 
+            "timestamp": "0522 10:46:03.482781"
+          }, 
+          {
+            "direction": "backward", 
+            "index": 74, 
+            "label": "74: prob", 
+            "time_ms": 22.6997, 
+            "time_s": 0.0226997, 
+            "timestamp": "0522 10:46:03.482803"
+          }
+        ], 
+        "post_processed": "yes", 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "time_bw_ms": 12989.3, 
+        "time_bw_s": 12.9893, 
+        "time_fw_ms": 10456.2, 
+        "time_fw_s": 10.4562, 
+        "time_fwbw_ms": 23453.9, 
+        "time_fwbw_s": 23.4539, 
+        "time_total_ms": 23453.9, 
+        "time_total_ms_kernel_0": 23453.9, 
+        "time_total_s": 23.4539, 
+        "time_total_s_kernel_0": 23.4539, 
+        "total_execution_time": 23.4539
+      }
+    }
+  ], 
+  "choices": {
+    "cmd_key": "default", 
+    "compile_type": "dynamic", 
+    "compiler_flags": {}, 
+    "cpu_freq": "max", 
+    "data_uoa": "caffe-time-opencl", 
+    "dataset_file": "", 
+    "device_cfg": {}, 
+    "device_id": "", 
+    "energy": "no", 
+    "env": {
+      "CAFFE_COMPUTE_DEVICE_ID": 0, 
+      "CK_ARMEABI_V7A": "OFF", 
+      "CK_ARMEABI_V7A_HARD": "OFF", 
+      "CK_CAFFE_BATCH_SIZE": "14", 
+      "CK_CAFFE_ITERATIONS": "1", 
+      "CK_CAFFE_MODEL": "/home/test/CK_REPOS/ck-caffe/program/caffe-time-opencl/tmp/tmp-RR0YJ9.prototxt", 
+      "CK_CAFFE_MODEL_FILE": "tmp-RR0YJ9.prototxt", 
+      "CK_CAFFE_MODEL_MEAN_BIN": "imagenet_mean.binaryproto", 
+      "CK_CAFFE_MODEL_WEIGHTS": "/home/test/CK_TOOLS/caffemodel-deepscale-squeezenet-1.1/squeezenet_v1.1.caffemodel", 
+      "CK_CPU_ARM_NEON": "OFF", 
+      "CK_CPU_ARM_VFPV3": "OFF", 
+      "CK_CPU_FREQUENCY": "max", 
+      "CK_ENV_MODEL_CAFFE_WEIGHTS": "/home/test/CK_TOOLS/caffemodel-deepscale-squeezenet-1.1/squeezenet_v1.1.caffemodel", 
+      "CK_GPU_FREQUENCY": "max", 
+      "XCT_REPEAT_MAIN": "1"
+    }, 
+    "flags": "-O3", 
+    "gpu_freq": "max", 
+    "host_os": "linux-32", 
+    "module_uoa": "b0ac08fe1d3c2615", 
+    "no_compile": "no", 
+    "no_state_check": "yes", 
+    "repeat": 1, 
+    "skip_calibration": "yes", 
+    "skip_print_timers": "yes", 
+    "target": "", 
+    "target_os": "linux-32", 
+    "target_os_bits": "32"
+  }, 
+  "choices_order": [
+    "##choices#env#CK_CAFFE_BATCH_SIZE"
+  ], 
+  "features": {
+    "compiler_version": {
+      "list": [
+        5, 
+        4, 
+        0
+      ], 
+      "raw": [
+        "gcc (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609", 
+        "Copyright (C) 2015 Free Software Foundation, Inc.", 
+        "This is free software; see the source for copying conditions.  There is NO", 
+        "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.", 
+        "", 
+        ""
+      ], 
+      "str": "5.4.0"
+    }, 
+    "number_of_selected_compiler_flags": 0, 
+    "platform": {
+      "cpu": {
+        "all_freqs": {
+          "0": [
+            408000, 
+            600000, 
+            816000, 
+            1008000, 
+            1200000, 
+            1416000
+          ], 
+          "1": [
+            408000, 
+            600000, 
+            816000, 
+            1008000, 
+            1200000, 
+            1416000
+          ], 
+          "2": [
+            408000, 
+            600000, 
+            816000, 
+            1008000, 
+            1200000, 
+            1416000
+          ], 
+          "3": [
+            408000, 
+            600000, 
+            816000, 
+            1008000, 
+            1200000, 
+            1416000
+          ], 
+          "4": [
+            408000, 
+            600000, 
+            816000, 
+            1008000, 
+            1200000, 
+            1416000, 
+            1608000, 
+            1800000
+          ], 
+          "5": [
+            408000, 
+            600000, 
+            816000, 
+            1008000, 
+            1200000, 
+            1416000, 
+            1608000, 
+            1800000
+          ]
+        }, 
+        "cpu_abi": "", 
+        "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+        "current_freq": {
+          "0": 1416.0, 
+          "1": 1416.0, 
+          "2": 1416.0, 
+          "3": 1416.0, 
+          "4": 1800.0, 
+          "5": 1800.0
+        }, 
+        "max_freq": {
+          "0": 1416.0, 
+          "1": 1416.0, 
+          "2": 1416.0, 
+          "3": 1416.0, 
+          "4": 1800.0, 
+          "5": 1800.0
+        }, 
+        "name": "ARMv8 Processor rev 2 (v8l)", 
+        "num_proc": "6", 
+        "sub_name": "ARMv8 Processor rev 2 (v8l)", 
+        "workload_automation": {
+          "device_config": {
+            "core_clusters": [
+              0, 
+              0, 
+              0, 
+              0, 
+              1, 
+              1
+            ], 
+            "core_names": [
+              "ARMv8 Processor rev 4 (v8l)", 
+              "ARMv8 Processor rev 4 (v8l)", 
+              "ARMv8 Processor rev 4 (v8l)", 
+              "ARMv8 Processor rev 4 (v8l)", 
+              "ARMv8 Processor rev 2 (v8l)", 
+              "ARMv8 Processor rev 2 (v8l)"
+            ]
+          }
+        }
+      }, 
+      "cpu_misc": {
+        "0": {
+          "BogoMIPS": "48.00", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 4 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 2 (v8l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1416.0, 
+          "max_freq": 1416.0, 
+          "model name": "ARMv8 Processor rev 4 (v8l)", 
+          "processor": "0"
+        }, 
+        "1": {
+          "BogoMIPS": "48.00", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1", 
+            "1"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 4 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 2 (v8l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1416.0, 
+          "max_freq": 1416.0, 
+          "model name": "ARMv8 Processor rev 4 (v8l)", 
+          "processor": "1"
+        }, 
+        "2": {
+          "BogoMIPS": "48.00", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2", 
+            "2"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 4 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 2 (v8l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1416.0, 
+          "max_freq": 1416.0, 
+          "model name": "ARMv8 Processor rev 4 (v8l)", 
+          "processor": "2"
+        }, 
+        "3": {
+          "BogoMIPS": "48.00", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3", 
+            "3"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 4 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 2 (v8l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1416.0, 
+          "max_freq": 1416.0, 
+          "model name": "ARMv8 Processor rev 4 (v8l)", 
+          "processor": "3"
+        }, 
+        "4": {
+          "BogoMIPS": "48.00", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd08", 
+          "CPU revision": "2", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "4", 
+            "4", 
+            "4", 
+            "4", 
+            "4", 
+            "4", 
+            "4", 
+            "4"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 2 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 2 (v8l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1800.0, 
+          "max_freq": 1800.0, 
+          "model name": "ARMv8 Processor rev 2 (v8l)", 
+          "processor": "4"
+        }, 
+        "5": {
+          "BogoMIPS": "48.00", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd08", 
+          "CPU revision": "2", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "Serial": "0000000000000000", 
+          "all_freqs": [
+            "5", 
+            "5", 
+            "5", 
+            "5", 
+            "5", 
+            "5", 
+            "5", 
+            "5"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 2 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 2 (v8l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1800.0, 
+          "max_freq": 1800.0, 
+          "model name": "ARMv8 Processor rev 2 (v8l)", 
+          "processor": "5"
+        }
+      }, 
+      "cpu_new_format": "", 
+      "cpu_unique": [
+        {
+          "BogoMIPS": "48.00", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 4 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 2 (v8l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1416.0, 
+          "max_freq": 1416.0, 
+          "model name": "ARMv8 Processor rev 4 (v8l)", 
+          "processor": "0"
+        }, 
+        {
+          "BogoMIPS": "48.00", 
+          "CPU architecture": "8", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd08", 
+          "CPU revision": "2", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "all_freqs": [
+            "4", 
+            "4", 
+            "4", 
+            "4", 
+            "4", 
+            "4", 
+            "4", 
+            "4"
+          ], 
+          "ck_cpu_name": "ARMv8 Processor rev 2 (v8l)", 
+          "ck_cpu_subname": "ARMv8 Processor rev 2 (v8l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt lpae evtstrm aes pmull sha1 sha2 crc32", 
+          "cur_freq": 1800.0, 
+          "max_freq": 1800.0, 
+          "model name": "ARMv8 Processor rev 2 (v8l)", 
+          "processor": "4"
+        }
+      ], 
+      "gpu": {
+        "name": "", 
+        "vendor": ""
+      }, 
+      "gpu_misc": {}, 
+      "os": {
+        "abi": "aarch64", 
+        "bits": "32", 
+        "ck_os_base_uoa": "", 
+        "ck_os_uoa": "linux-32", 
+        "name": "Ubuntu 16.04.2 LTS", 
+        "name_long": "Linux-4.4.52-aarch64-with-Ubuntu-16.04-xenial", 
+        "name_short": "Linux 4.4.52", 
+        "serial_number": ""
+      }, 
+      "os_misc": {}, 
+      "platform": {
+        "model": "Rockchip RK3399 Firefly Board (Linux Opensource)\u0000", 
+        "name": "Rockchip (Rockchip RK3399 Firefly Board (Linux Opensource)\u0000)", 
+        "vendor": "Rockchip"
+      }, 
+      "platform_misc": {}
+    }, 
+    "statistical_repetitions": 3
+  }
+}
