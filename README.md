@@ -12,8 +12,8 @@ A suite of open-source tools for [collecting knowledge on optimising AI](http://
 # [PUBLIC] Benchmarking Caffe on Firefly-RK3399
 
 The Jupyter notebook (
-[view on github.com](https://github.com/dividiti/ck-caffe-firefly-rk3399/blob/master/script/batch_size-libs-models/analysis.20170530.ipynb);
-[view on nbviewer.jupyter.org](https://nbviewer.jupyter.org/github/dividiti/ck-caffe-firefly-rk3399/blob/master/script/batch_size-libs-models/analysis.20170530.ipynb)
+[view on github.com](https://github.com/dividiti/ck-caffe-firefly-rk3399/blob/master/script/batch_size-libs-models/analysis.20170531.ipynb);
+[view on nbviewer.jupyter.org](https://nbviewer.jupyter.org/github/dividiti/ck-caffe-firefly-rk3399/blob/master/script/batch_size-libs-models/analysis.20170531.ipynb)
 ) in this Collective Knowledge repository analyses the execution time of
 inference (forward propagation):
 
