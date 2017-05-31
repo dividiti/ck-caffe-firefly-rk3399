@@ -5,8 +5,9 @@ A suite of open-source tools for [collecting knowledge on optimising AI](http://
 * [Desktop app](https://github.com/dividiti/ck-crowdsource-dnn-optimization)
 * [CK-Caffe](https://github.com/dividiti/ck-caffe)
 * [CK-Caffe2](https://github.com/ctuning/ck-caffe2)
-* [CK-TensorRT](https://github.com/dividiti/ck-tensorrt)
 * [CK-TensorFlow](https://github.com/ctuning/ck-tensorflow)
+* [CK-TensorRT](https://github.com/dividiti/ck-tensorrt)
+* [CK-KaNN](https://github.com/dividiti/ck-kann)
 * etc.
 
 # [PUBLIC] Benchmarking Caffe on Firefly-RK3399
